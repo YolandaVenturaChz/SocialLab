@@ -69,9 +69,12 @@ body {
     color: #FFC107;
 }
 /*ventana signup1*/
-
+.logo {
+    height: auto;
+    width: 25vh;
+}
 .btnSignIn {
-   align-items: flex-end;
+    align-items: flex-end;
 }
 .btnStyle {
 	background-color: #333333;
@@ -81,7 +84,11 @@ body {
 	background-color: black;
 	color: white;
 }
-
+.line {
+    margin-top: 0;
+    border: 1px solid #FFC107;
+    width: 60%;
+}
 @media (min-width: 1280px) {
     .vh45 {
         width: 100vh;
