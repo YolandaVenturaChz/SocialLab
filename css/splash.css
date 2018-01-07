@@ -6,7 +6,9 @@ body {
 
 
 /* #FFC107 #000000 #333333*/
-
+#navHeader {
+    margin-bottom: 10vh;
+}
 .flex-splash {
     flex-direction: row;
     background: black;
@@ -31,7 +33,7 @@ body {
 }
 /*ventana signUp*/
 .signUp {
-    background-image: url('../assets/images/fondo.jpg');
+    background-image: url('../assets/images/backgroundOne.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -41,7 +43,7 @@ body {
 }
 
 .flex-item {
-    outline: 1px solid red;
+    /*outline: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -54,11 +56,32 @@ body {
     flex-direction: column-reverse;
     justify-content: space-evenly;
 }
+.btncolor {
+    background-color: #FFC107;
+    color: #000000;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+.btncolor:hover {
+    border: 1px solid #FFC107;
+    background-color: rgba(0, 0, 0, 0.378);
+    color: #FFC107;
+}
 /*ventana signup1*/
 
 .btnSignIn {
    align-items: flex-end;
 }
+.btnStyle {
+	background-color: #333333;
+	color: white;
+}
+.btnStyle:hover {
+	background-color: black;
+	color: white;
+}
+
 @media (min-width: 1280px) {
     .vh45 {
         width: 100vh;
