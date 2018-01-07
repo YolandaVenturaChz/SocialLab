@@ -5,7 +5,7 @@ var data=[ estudent = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, UX Designer, UI Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/cecilia.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Elizabeth Humberto Rito',
@@ -13,7 +13,7 @@ var data=[ estudent = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: [' UX Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/melisa.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Rafaela Remo del Castillo',
@@ -21,7 +21,7 @@ var data=[ estudent = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Back End Developer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/galia.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Dayce Ventura Buendia',
@@ -29,7 +29,7 @@ var data=[ estudent = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/carladavila.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Alejandra Segura Calvin',
@@ -37,7 +37,7 @@ var data=[ estudent = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer, UX Designer, UI Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/analucia.jpg" alt="" class="mouseover">'
   },
 ],
 mentores = [
@@ -47,7 +47,7 @@ mentores = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer, UX Designer, UI Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/ana.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Lulú Palacios',
@@ -55,7 +55,7 @@ mentores = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer, UX Designer, UI Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/ana.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Lalo Gomez',
@@ -63,7 +63,7 @@ mentores = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['UX Designer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/ana.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Ruth Estrada',
@@ -71,7 +71,7 @@ mentores = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/ana.jpg" alt="" class="mouseover">'
   },
   {
     name: 'Joalbert Puma',
@@ -79,7 +79,7 @@ mentores = [
     cel: '999999999',
     email: 'juanita@gmail.com',
     filters: ['Front End Developer, Back End Developer'],
-    photo: '<img src="assets/img/.png" alt="" class="mouseover">'
+    photo: '<img src="assets/images/ana.jpg" alt="" class="mouseover">'
   },
 ]
 ];
