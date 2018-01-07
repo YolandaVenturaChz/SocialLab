@@ -1,14 +1,14 @@
 $('document').ready(function() { 
- /**ventana inicio*/
+  /* ventana inicio*/
   $('#config').click(function() {
     window.location.href = 'userConfig.html';
   });
   
-   /**ventaana profileUser */
-  $('#btnSignIn').click(function () {
+  /* ventaana profileUser */
+  $('#btnSignIn').click(function() {
     window.location.href = 'userConfig.html';
   });
 
-/**ventana userConfigur */
+  /* ventana userConfigur */
 
 });
