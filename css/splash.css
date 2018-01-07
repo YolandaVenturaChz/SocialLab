@@ -1,0 +1,46 @@
+body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* #FFC107 #000000 #333333*/
+
+[class^="flex-"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-splash {
+    flex-direction: row;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
+.signUp {
+ background-image: url('../assets/images/fondo.jpg');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-item {
+    outline: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    width: 100%;
+}
