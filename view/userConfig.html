@@ -12,6 +12,37 @@
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
+    <!-- header -->
+    <div class="container" id="navHeader">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">
+                    <img src="../assets/images/logoLab.png" alt="LogoLab" class="logo">
+                </a>
+            </div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <form class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search more friends">
+                        <span class="input-group-btn">
+                            <a href="" class="btn btn-default" id="inicio">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </a>
+                        </span>
+                    </div>
+                    <a href="../index.html" class="btn btnStyle">Cerrar Sesión</a>
+                </form>
+            </div>
+        </nav>
+    </div>
     <div class="container">
         <section class="row aside">
             <div class="col-md-4">
@@ -26,7 +57,8 @@
             <input type="password" class="form-control" placeholder="Contraseña">
             <input type="password" class="form-control" placeholder="Contraseña nueva">
             <input type="password" class="form-control" placeholder="Confirmar contraseña">
-            <button class="btn">Guardar cambios</button>
+            <a href="profileUser.html" class="btn">Guardar cambios</a>
+            
         </section>
     </div>
     <!--scripts -->

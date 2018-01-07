@@ -7,12 +7,6 @@ body {
 
 /* #FFC107 #000000 #333333*/
 
-[class^="flex-"] {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .flex-splash {
     flex-direction: row;
     background: black;
@@ -21,26 +15,50 @@ body {
     align-items: center;
 }
 
+.between {
+    justify-content: space-between;
+}
+/* style generales*/
 .vh100 {
     height: 100vh;
 }
 
+.vh45 {
+    width: 45vh;
+}
+.flex {
+    display: flex;
+}
+/*ventana signUp*/
 .signUp {
- background-image: url('../assets/images/fondo.jpg');
- background-repeat: no-repeat;
- background-size: cover;
- background-position: center center;
-  display: flex;
-  flex-direction: column-reverse;
-  justify-content: flex-start;
-  align-items: center;
+    background-image: url('../assets/images/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .flex-item {
     outline: 1px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 header {
     width: 100%;
+}
+/*ventana signup1*/
+
+.btnSignIn {
+   align-items: flex-end;
+}
+@media (min-width: 1280px) {
+    .vh45 {
+        width: 100vh;
+    }
 }

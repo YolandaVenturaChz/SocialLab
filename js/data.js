@@ -20,7 +20,7 @@ var data=[ estudent = [
     address: "Brasil",
     cel: '999999999',
     email: 'juanita@gmail.com',
-    filters: ["Front End Developer, Back End Developer, UX Designer, UI Designer"],
+    filters: ["Back End Developer"],
     photo: "<img src='assets/img/.png' alt='' class='mouseover'>"
   },
   {
@@ -28,7 +28,7 @@ var data=[ estudent = [
     address: "Chile",
     cel: '999999999',
     email: 'juanita@gmail.com',
-    filters: ["Front End Developer, Back End Developer, UX Designer, UI Designer"],
+    filters: ["Front End Developer, Back End Developer"],
     photo: "<img src='assets/img/.png' alt='' class='mouseover'>"
   },
   {
@@ -59,7 +59,7 @@ var data=[ estudent = [
     },
     {
       name: 'Lalo Gomez',
-      address: [""],
+      address: ["mexico"],
       cel: '999999999',
       email: 'juanita@gmail.com',
       filters: ["UX Designer"],
@@ -67,7 +67,7 @@ var data=[ estudent = [
     },
     {
       name: 'Ruth Estrada',
-      address: [""],
+      address: ["mexico"],
       cel: '999999999',
       email: 'juanita@gmail.com',
       filters: ["Front End Developer, Back End Developer"],
@@ -75,7 +75,7 @@ var data=[ estudent = [
     },
     {
       name: 'Joalbert Puma',
-      address: [""],
+      address: ["chile"],
       cel: '999999999',
       email: 'juanita@gmail.com',
       filters: ["Front End Developer, Back End Developer"],

@@ -1,5 +1,14 @@
 $('document').ready(function() { 
-  $('.sendConfig').click(function() {
-    window.location.href = 'signup.html';
+ /**ventana inicio*/
+  $('#config').click(function() {
+    window.location.href = 'userConfig.html';
   });
+  
+   /**ventaana profileUser */
+  $('#btnSignIn').click(function () {
+    window.location.href = 'userConfig.html';
+  });
+
+/**ventana userConfigur */
+
 });
