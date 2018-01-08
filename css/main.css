@@ -17,6 +17,10 @@ body {
 	background-color: #333333;
 	color: white;
 }
+.spaceDown {
+    margin-bottom: 10px;
+    
+}
 .btnStyle:hover {
 	background-color: black;
 	color: white;
@@ -30,6 +34,16 @@ body {
 	margin-top: 3.5%;
 	box-sizing: border-box;
 	padding: 0;
+}
+.sendConfig {
+    border: 1px solid #FFC107;
+    color: #FFC107 !important;
+    font-weight: bolder;
+}
+.friendsMentors {
+    border: 1px solid #FFC107;
+    color: #FFC107 !important;
+    font-weight: bolder;
 }
 .userInfo {
 	width: 100%;
@@ -66,12 +80,16 @@ body {
 }
 /* segunda section informacicon del usuario */
 #sectionInfo {
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	height: auto;
+    padding-bottom: 10px;
+    box-shadow: 1px 1px 1px gray;
 }
 .logofront {
 	width: 50px;
 	height: 50px;
+    margin: 5px;
+    display: flex;
 }
 /* View de user config */
 #container-js {
@@ -81,4 +99,164 @@ body {
     width: 30vh;
     height: auto;
 }
+.containerUser {
+    /*outline: 1px solid blue;*/
+    height: 20vh;
+    width: 100%;
+}
+/* profileUser */
+.cameraCss {
+    padding: 5px;
+    border-radius: 50px;
+    color: white;
+    position: relative;
+    /*outline: 1px solid red;*/
+    top: 15vh;
+    background-color: #FFC107;
+}
+.cameraCss:hover {
+    background-color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.configUser {
+    padding: 5px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    position: relative;
+    top: 15vh;
+    left: 16vh;
+}
+.configUser:hover {
+    background-color: #FFC107;
+    transition: 0.5s;
+}
+/* profile user section information */
+#usernameInfo {
+    font-weight: bolder;
+    text-align: center;
+}
+.emailIcon {
+    font-weight: bolder;
+    margin-right: 5px;
+    color: #333333;
+    padding: 5px;
+    background-color: #FFC107;
+    border-radius: 50px;
+}
+.description {
+    background-color: #333333;
+    color: white;
+    border-radius: 50px;
+    padding: 7px;
+    margin: 0px 10vh;
+}
+.emailUser {
+    margin: 10px 10vh;   
+}
+.langPrograming {
+    padding: 10px;
+    background-color: #333333;
+    color: white;
+    border-radius: 10px;
+}
+#newPost {
+    height: auto;
+    padding: 10px;
+}
+#inputPost {
+    float: left;
+    width: 60%;
+    display: inline-block;
+    margin-left:15%;
+    resize: none;
+    margin-right: 10px;
+}
+.footEnd {
+    background-color: #333333;
+    color: white;
+    width: 100%;
+    height: 7vh;
+    padding: 10px;
+}
+/* desktop */
+@media (min-width: 1280px) {
+    .containerUser {
+        padding-left: 10vh;
+    }
+}
+/* minimo min para evitar el movimiento del flujo de objetos
+osease :v minimo mobile */
+@media only screen and (max-width:320px){
+    .userInfo h4 {
+	    display: inline-block;
+        float: left;
+	    margin-top: 10px;
+    }
+    .userInfo > a {
+	    margin-right: 10px;
+	    color: white;
+    }
+    .userInfo  .icon {
+        float: right;
+    }
+    #placeHome {
+        float: left;
+    }
+    .usericon {
+        width: 100px;
+        height: 100px;
+    }
+    .friendsMentors {
+        padding: 1px;
+    }
+}
+/* :v medio mobile */
+@media only screen and (max-width: 500px) {
+    .containerUser {
+        padding-right: 10vh; 
+    }
+    .description {
+        margin-left: 1vh;
+    }
+    .emailUser {
+        margin: 10px 10vh;
+    }
+}
+@media only screen and (min-width:750px) {
+    .description {
+        margin-left: 4vh;
+    }
+}
 /* .col-md-6 .col-md-offset-3 */
+/* Prueba  */
+.file-input-wrapper {
+    width: 200px;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+}
+.file-input-wrapper > input[type="file"] {
+    font-size: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+}
+.file-input-wrapper > .btn-file-input {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FFC107;
+    border: 0;
+    border-radius:30px;
+    position: relative;
+    top: 1vh;
+    left: 12vh;
+}
+.file-input-wrapper:hover > .btn-file-input {
+    background-color: #333333;
+    color:white;
+}
+

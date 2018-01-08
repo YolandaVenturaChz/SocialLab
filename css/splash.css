@@ -71,8 +71,8 @@ body {
 }
 /*ventana signup1*/
 .logo {
-    height: auto;
-    width: 25vh;
+	height: auto;
+	width: 70%;
 }
 .btnSignIn {
     align-items: flex-end;
@@ -89,6 +89,12 @@ body {
     margin-top: 0;
     border: 1px solid #FFC107;
     width: 60%;
+}
+.forgotPass {
+    font-size: 12px;
+}
+.account {
+    font-size: 12px;
 }
 @media (min-width: 1280px) {
     .vh45 {

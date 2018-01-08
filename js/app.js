@@ -8,7 +8,4 @@ $('document').ready(function() {
   $('#btnSignIn').click(function() {
     window.location.href = 'userConfig.html';
   });
-
-  /* ventana userConfigur */
-
 });
