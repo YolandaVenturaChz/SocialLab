@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <title>Social Lab</title>
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="../assets/icons/font-awesome/css/font-awesome.min.css">
@@ -31,9 +30,9 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <form class="navbar-form navbar-right">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search more friends">
+                        <input type="text" class="form-control spaceDown" placeholder="Search more friends">
                         <span class="input-group-btn">
-                            <a href="" class="btn btn-default" id="inicio">
+                            <a href="" class="btn btn-default spaceDown" id="inicio">
                                 <span class="glyphicon glyphicon-search"></span>
                             </a>
                         </span>
@@ -46,11 +45,16 @@
     <div class="container" id="container-js">
         <section class="row aside">
             <div class="col-xs-12 col-md-12">
-                <div class="containerUser">
-                    <img src="../assets/images/iconUser.png" class="userimg center-block" alt="image user" >
-                    <i class="fa fa-camera" aria-hidden="true"></i>
+                <div class="containerUser row">
+                   <div class="usericon col-xs-12 col-xs-offset-5 col-md-3 col-md-offset-5">
+                       <!-- prueba -->
+                       <div class="file-input-wrapper">
+                            <button class="btn-file-input"><i class="fa fa-camera" aria-hidden="true"></i></button>
+                            <input type="file" name="file" />
+                        </div>
+                   </div>
                 </div>
-                <h3 class="username text-center ">Sammy Cordova Coder</h3>
+                <h3 class="username text-center">Sammy Cordova Coder</h3>
             </div>
         </section>
         <section class="row main">
@@ -64,9 +68,6 @@
                 </div>
                 <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
                     <input type="password" class="form-control" placeholder="Contraseña">
-                </div>
-                <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
-                    <input type="password" class="form-control" placeholder="Contraseña nueva">
                 </div>
                 <div class="form-group col-xs-12 col-md-10 col-md-offset-1">
                     <input type="password" class="form-control" placeholder="Confirmar contraseña">
