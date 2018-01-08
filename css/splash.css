@@ -33,7 +33,7 @@ body {
 }
 /*ventana signUp*/
 .signUp {
-    background-image: url('../assets/images/backgroundOne.jpeg');
+    background-image: url('../assets/images/fondo.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
