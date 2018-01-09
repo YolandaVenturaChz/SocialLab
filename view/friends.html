@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainfriend.css">
 </head>
 
 <body class=" vh100">
@@ -44,15 +44,38 @@
             </nav>
         </div>
     </header>
-    <section class="container-fluid flujo">
-        <main  class="row">
-            
-        </main>
-        <aside class="row">
-           
-        </aside>
+    <section>
+        <div class="container-fluid">
 
+            <!-- Botones para mostrar amigos - mentores - conocidos -seguidores -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-know">know</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-followems">followems</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-mentors">mentors</button>
+                </div>
+                <!-- Botón para mostrar las personas que quizas conocemos , mentores amigos ,etc -->
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-knowPeople">know people</button>
+                </div>
+            </div>
 
+            <!-- div vacío donde irán las personas conocidas -->
+            <div class="know"></div>
+
+            <!-- div vacío donde irán las personas que nos siguen -->
+            <div class="followems"></div>
+
+            <!-- div vacío donde irán los mentores -->
+            <div class="mentors"></div>
+
+            <!-- div vacío donde irán todas los personas que quizas conocemos -->
+            <div class="knowPeople"></div>
+        </div>
     </section>
     <footer>
         <div>
@@ -62,7 +85,8 @@
 
     <script src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
     <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/app2.js"></script>
+    <script src="../js/datafriend.js"></script>
+    <script src="../js/friends.js"></script>
 </body>
 
 </html>
