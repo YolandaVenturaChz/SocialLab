@@ -34,7 +34,7 @@ body {
 	color: white;
 }
 .main {
-    margin-top: 60px;
+    margin-top: 61px;
     background: url('../assets/images/backgroundOne.jpeg');
     background-size: cover;
     background-position: center center;
@@ -48,8 +48,3 @@ img {
 }
 /* medias query 
 Mobile Min */
-@media screen and (min-width: 320px){
-    .main {
-        margin-top: 50px;
-    }
-}
