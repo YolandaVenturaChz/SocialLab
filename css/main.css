@@ -259,4 +259,15 @@ osease :v minimo mobile */
     background-color: #333333;
     color:white;
 }
-
+/* post del User */
+.newDiv {
+    padding: 7px;
+    width: 70%;
+    margin: 3px auto;
+    margin-bottom: 10px;
+    height: auto;
+    clear: both;
+    border-radius: 20px;
+    background-color: rgba(26, 26, 26, 0.385);
+    box-shadow: 2px 2px 2px gray;
+}
