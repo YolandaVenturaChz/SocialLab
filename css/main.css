@@ -132,6 +132,13 @@ body {
     background-color: #FFC107;
     transition: 0.5s;
 }
+.spaceOne {
+    margin-right: 5px;
+}
+.btnFriends {
+    margin-left: 30%;
+    margin-bottom: 2vh;
+}
 /* profile user section information */
 #usernameInfo {
     font-weight: bolder;
@@ -185,6 +192,9 @@ body {
     .containerUser {
         padding-left: 10vh;
     }
+    .btnFriends {
+    margin-left: 33%;
+    }
 }
 /* minimo min para evitar el movimiento del flujo de objetos
 osease :v minimo mobile */
@@ -230,7 +240,7 @@ osease :v minimo mobile */
     }
 }
 /* .col-md-6 .col-md-offset-3 */
-/* Prueba  */
+/* Prueba  en userconfig*/
 .file-input-wrapper {
     width: 200px;
     height: 40px;

@@ -2,13 +2,39 @@
     margin: 2em 0;
     background: ghostwhite;
 }
-
-.btn {
-    margin: 2em 0;
+body {
+    font-family: 'Lato', sans-serif;
+}
+/* #FFC107 #000000 #333333*/
+#navHeader {
+	padding-left: 0;
+	padding-right: 0;
+}
+.logo {
+	height: auto;
+	width: 70%;
+}
+.input-group {
+	margin-right: 5px;
+}
+.btnStyle {
+	background-color: #333333;
+	color: white;
+}
+.spaceDown {
+    margin-bottom: 10px;
     
 }
+.btnStyle:hover {
+	background-color: black;
+	color: white;
+}
+.btnStyle:hover {
+	background-color: black;
+	color: white;
+}
 .main {
-    margin-top: 100px;
+    margin-top: 60px;
     background: url('../assets/images/backgroundOne.jpeg');
     background-size: cover;
     background-position: center center;
@@ -19,4 +45,11 @@ img {
 
 .col-md-6 {
     background: rgb(247, 151, 7);
+}
+/* medias query 
+Mobile Min */
+@media screen and (min-width: 320px){
+    .main {
+        margin-top: 50px;
+    }
 }
