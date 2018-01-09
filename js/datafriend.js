@@ -1,149 +1,158 @@
-
 var data = {
-    'gossip': {
-        'characters': [
-            {
+    'know': {
+        'characters': [{
                 'name': 'Blair Waldorf',
-                'picture': '../assets/images/gossip/blair.jpg',
-                'school': 'Constance Billard School',
-                'city': 'Manhattan, New York'
+                'picture': 'images/know/ana.jpg',
+                'cel': 999999999,
+                'email': 'juanita@gmail.com',
+                'especialidad': 'Fron EndDeveloper',
+                'city': 'Arequipa, Peru',
             },
             {
-                'name': 'Serena Van Der Woodsen',
-                'picture': '../assets/images/gossip/serena.jpg',
+                'name': 'Juana Gonzales Luna',
+                'picture': 'images/know/ana.jpg',
+                'cel': 999999999,
+                'email': 'juanita@gmail.com',
+                'especialidad': 'Fron EndDeveloper',
                 'school': 'Constance Billard School',
-                'city': 'Manhattan, New York'
+                'city': 'Arequipa, Peru',
             },
             {
                 'name': 'Jenny Humphrey',
-                'picture': '../assets/images/gossip/jenny.jpg',
+                'picture': 'images/know/ana.jpg',
+                'cel': 999999999,
+                'email': 'juanita@gmail.com',
+                'especialidad': 'Fron EndDeveloper',
                 'school': 'Constance Billard School',
-                'city': 'Brooklyn, New York'
+                'city': 'Arequipa, Peru',
             },
             {
                 'name': 'Chuck Bass',
-                'picture': '../assets/images/gossip/chuck.jpg',
+                'picture': 'images/know/ana.jpg',
+                'cel': 999999999,
+                'email': 'juanita@gmail.com',
+                'especialidad': 'Fron EndDeveloper',
                 'school': 'Riverside Preparatory School',
-                'city': 'Manhattan, New York'
+                'city': 'Arequipa, Peru',
             },
             {
                 'name': 'Nate Archibald',
-                'picture': '../assets/images/gossip/nate.jpg',
+                'picture': 'images/know/ana.jpg',
+                'cel': 999999999,
+                'email': 'juanita@gmail.com',
+                'especialidad': 'Fron EndDeveloper',
                 'school': 'Riverside Preparatory School',
-                'city': 'Manhattan, New York'
+                'city': 'Arequipa, Peru',
             },
             {
                 'name': 'Dan Humphrey',
-                'picture': '../assets/images/gossip/dan.jpg',
+                'picture': 'images/know/ana.jpg',
                 'school': 'Riverside Preparatory School',
-                'city': 'Brooklyn, New York'
+                'city': 'Arequipa, Peru',
             }
         ]
     },
-    'breakingbad': {
-        'characters': [
-            {
+    'followens': {
+        'characters': [{
                 'name': 'Walter White',
-                'picture': '../assets/images/breakingbad/walter.jpg',
-                'city': 'Albuquerque'
+                'picture': 'images/followems/analucia.jpg',
+                'city': 'Santiago, Chile',
             },
             {
                 'name': 'Skyler White',
-                'picture': '../assets/images/breakingbad/skyler.jpg',
-                'city': 'Albuquerque'
+                'picture': 'images/followems/annalise.jpg',
+                'city': 'Santiago, Chile',
             },
             {
-                'name': 'Jesse Pinkman',
-                'picture': '../assets/images/breakingbad/jesse.jpg',
-                'city': 'Albuquerque'
+                'name': 'Juana Gonzales Luna',
+                'picture': 'images/followems/cecilia.jpg',
+                'city': 'Santiago, Chile',
             },
             {
                 'name': 'Gus Fring',
-                'picture': '../assets/images/breakingbad/gus.jpg',
-                'city': 'Albuquerque'
+                'picture': 'images/followems/asher.jpg',
+                'city': 'Santiago, Chile',
             },
             {
                 'name': 'Mike Ehrmantraut',
-                'picture': '../assets/images/breakingbad/mike.jpg',
-                'city': 'Albuquerque'
+                'picture': 'images/followems/michaela.jpg',
+                'city': 'Santiago, Chile',
             }
         ]
     },
-    'howtoget': {
-        'characters': [
-            {
-                'name': 'Annalise Keating',
-                'picture': '../assets/images/howtoget/annalise.jpg',
-                'city': 'Philadelphia'
+    'mentors': {
+        'characters': [{
+                'name': 'Elizabeth Humberto Rito',
+                'picture': 'images/mentors/dan.jpg',
+                'city': 'Lima, Peru',
             },
             {
                 'name': 'Connor Walsh',
-                'picture': '../assets/images/howtoget/connor.png',
-                'city': 'Philadelphia'
+                'picture': 'images/mentors/jenny.png',
+                'city': 'Lima, Peru',
             },
             {
                 'name': 'Wes Gibbins',
-                'picture': '../assets/images/howtoget/wes.jpg',
-                'city': 'Philadelphia'
+                'picture': 'images/mentors/maties.jpg',
+                'city': 'Lima, Peru',
             },
             {
-                'name': 'Asher Millstone',
-                'picture': '../assets/images/howtoget/asher.jpg',
-                'city': 'Philadelphia'
+                'name': 'Elizabeth Humberto Rito',
+                'picture': 'images/mentors/melisa.jpg',
+                'city': 'Lima, Peru',
             },
             {
-                'name': 'Michaela Pratt',
-                'picture': '../assets/images/howtoget/michaela.jpg',
-                'city': 'Philadelphia'
+                'name': 'Dayce Ventura Buendia',
+                'picture': 'images/mentors/olga.jpg',
+                'city': 'Lima, Peru',
             },
             {
                 'name': 'Frank Delfino',
-                'picture': '../assets/images/howtoget/frank.jpg',
-                'city': 'Philadelphia'
+                'picture': 'images/mentors/dan.jpg',
+                'city': 'Lima, Peru',
             },
             {
-                'name': 'Bonnie Winterbottom',
-                'picture': '../assets/images/howtoget/bonnie.jpg',
-                'city': 'Philadelphia'
+                'name': 'Alejandra Segura Calvin',
+                'picture': 'images/mentors/melisa.jpg',
+                'city': 'Lima, Peru',
             }
         ]
     },
-    'stranger': {
-        'characters': [
-            {
-                'name': 'Eleven',
-                'picture': '../assets/images/stranger/eleven.jpg',
-                'city': 'Hawkins, Indiana'
+    'knowfollow': {
+        'characters': [{
+                'name': 'Rafaela Remo del Castillo',
+                'picture': 'images/stranger/carladavila.jpg',
+                'city': 'D.C , Mexico',
             },
             {
                 'name': 'Mike Wheeler',
-                'picture': '../assets/images/stranger/mike.jpg',
-                'city': 'Hawkins, Indiana'
+                'picture': 'images/stranger/chuck.jpg',
+                'city': 'D.C , Mexico',
             },
             {
                 'name': 'Dustin Henderson',
-                'picture': '../assets/images/stranger/dustin.jpg',
-                'city': 'Hawkins, Indiana'
+                'picture': 'images/stranger/connor.png',
+                'city': 'D.C , Mexico',
             },
             {
                 'name': 'Lucas Sinclair',
-                'picture': '../assets/images/stranger/lucas.jpg',
-                'city': 'Hawkins, Indiana'
+                'picture': 'images/stranger/galia.jpg',
+                'city': 'D.C , Mexico',
             },
             {
                 'name': 'Will Byers',
-                'picture': '../assets/images/stranger/will.jpg',
-                'city': 'Hawkins, Indiana'
+                'picture': 'images/stranger/serena.jpg',
+                'city': 'D.C , Mexico',
             },
             {
-                'name': 'Nancy Wheeler',
-                'picture': '../assets/images/stranger/nancy.png',
-                'city': 'Hawkins, Indiana'
+                'name': 'Rafaela Remo del Castillo',
+                'picture': 'images/stranger/carladavila.jpg',
+                'city': 'D.C , Mexico',
             },
             {
                 'name': 'Joyce Byers',
-                'picture': '../assets/images/stranger/joyce.jpg',
-                'city': 'Hawkins, Indiana'
+                'picture': 'images/stranger/serena.jpg',
+                'city': 'D.C , Mexico',
             }
         ]
     }
