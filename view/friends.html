@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/mainfriend.css">
 </head>
 
 <body class=" vh100">
@@ -44,15 +44,44 @@
             </nav>
         </div>
     </header>
-    <section class="container-fluid flujo">
-        <main  class="row">
-            
-        </main>
-        <aside class="row">
-           
-        </aside>
+    <section>
+        <div class="container">
 
+            <!-- Botones para mostrar personajes de cada serie -->
+            <div class="row">
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-gossip">Gossip Girl</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-breaking">Breaking Bad</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-how">How to get away...</button>
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-stranger">Stranger Things</button>
+                </div>
+                <!-- Botón para mostrar los personajes de todas las series -->
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-md btn-warning btn-all">All</button>
+                </div>
+            </div>
 
+            <!-- div vacío donde irán los personajes de gossip girl desde jquery + data -->
+            <div class="gossip"></div>
+
+            <!-- div vacío donde irán los personajes de breaking bad desde jquery + data -->
+            <div class="breaking"></div>
+
+            <!-- div vacío donde irán los personajes de how to get away with murder desde jquery + data -->
+            <div class="how"></div>
+
+            <!-- div vacío donde irán todos los personajes de stranger things desde jquery + data -->
+            <div class="stranger"></div>
+
+            <!-- div vacío donde irán todos los personajes desde jquery + data -->
+            <div class="all"></div>
+        </div>
     </section>
     <footer>
         <div>
@@ -62,7 +91,8 @@
 
     <script src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
     <script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../js/app2.js"></script>
+    <script src="../js/datafriend.js"></script>
+    <script src="../js/friends.js"></script>
 </body>
 
 </html>
