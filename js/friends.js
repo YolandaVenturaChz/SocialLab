@@ -18,6 +18,8 @@ $(document).ready(function () {
                 '<h3>' + know1[i].name + '</h3>' +
                 '<p>School: ' + know1[i].school + '</p>' +
                 '<p>City: ' + know1[i].city + '</p>' +
+                '<a class="btn">' + 'agregar amigos' + '</a>' +
+                '<a class="btn">' + 'agregar mentors' + '</a>' +
                 '</div>' +
                 '</div>')
         }
@@ -35,6 +37,8 @@ $(document).ready(function () {
                 '<div class= "col-md-6">' +
                 '<h3>' + followens1[i].name + '</h3>' +
                 '<p>City: ' + followens1[i].city + '</p>' +
+                '<a class="btn">' + 'agregar amigos' + '</a>' +
+                '<a class="btn">' + 'agregar mentors' + '</a>' +
                 '</div>' +
                 '</div>')
         }
@@ -50,6 +54,8 @@ $(document).ready(function () {
                 '<div class= "col-md-6">' +
                 '<h3>' + mentors1[i].name + '</h3>' +
                 '<p>City: ' + mentors1[i].city + '</p>' +
+                '<a class="btn">' + 'agregar amigos' + '</a>' +
+                '<a class="btn">' + 'agregar mentors' + '</a>' +
                 '</div>' +
                 '</div>')
         }
@@ -59,12 +65,14 @@ $(document).ready(function () {
         for (var i = 0; i < follow1.length; i++) {
             $('.followems, .mentors, .know').empty();
             $('.follow').append('<div class="row character">' +
-                '<div class= "col-md-6 text-center">' +
+                '<div class= "col-md-6 text-center color">' +
                 '<img src="../assets/' + follow1[i].picture + '">' +
                 '</div>' +
                 '<div class= "col-md-6">' +
                 '<h3>' + follow1[i].name + '</h3>' +
                 '<p>City: ' + follow1[i].city + '</p>' +
+                '<a class="btn">' + 'agregar amigos' + '</a>' +
+                '<a class="btn">' + 'agregar mentors' + '</a>' +
                 '</div>' +
                 '</div>')
         }
@@ -90,6 +98,8 @@ $(document).ready(function () {
                     '<div class= "col-md-6">' +
                     '<h3>' + allCharacters[i][j].name + '</h3>' +
                     '<p>City: ' + allCharacters[i][j].city + '</p>' +
+                    '<a class="btn">'+ 'agregar amigos' +'</a>'+
+                    '<a class="btn">' + 'agregar mentors' + '</a>' +
                     '</div>' +
                     '</div>')
             }

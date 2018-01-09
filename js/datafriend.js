@@ -88,7 +88,7 @@ var data = {
             },
             {
                 'name': 'Connor Walsh',
-                'picture': 'images/mentors/jenny.png',
+                'picture': 'images/mentors/jenny.jpg',
                 'city': 'Lima, Peru',
             },
             {
@@ -121,37 +121,32 @@ var data = {
     'knowfollow': {
         'characters': [{
                 'name': 'Rafaela Remo del Castillo',
-                'picture': 'images/stranger/carladavila.jpg',
+                'picture': 'images/knowfollow/carladavila.jpg',
                 'city': 'D.C , Mexico',
             },
             {
                 'name': 'Mike Wheeler',
-                'picture': 'images/stranger/chuck.jpg',
-                'city': 'D.C , Mexico',
-            },
-            {
-                'name': 'Dustin Henderson',
-                'picture': 'images/stranger/connor.png',
+                'picture': 'images/knowfollow/chuck.jpg',
                 'city': 'D.C , Mexico',
             },
             {
                 'name': 'Lucas Sinclair',
-                'picture': 'images/stranger/galia.jpg',
+                'picture': 'images/knowfollow/galia.jpg',
                 'city': 'D.C , Mexico',
             },
             {
                 'name': 'Will Byers',
-                'picture': 'images/stranger/serena.jpg',
+                'picture': 'images/knowfollow/serena.jpg',
                 'city': 'D.C , Mexico',
             },
             {
                 'name': 'Rafaela Remo del Castillo',
-                'picture': 'images/stranger/carladavila.jpg',
+                'picture': 'images/knowfollow/carladavila.jpg',
                 'city': 'D.C , Mexico',
             },
             {
                 'name': 'Joyce Byers',
-                'picture': 'images/stranger/serena.jpg',
+                'picture': 'images/knowfollow/serena.jpg',
                 'city': 'D.C , Mexico',
             }
         ]
