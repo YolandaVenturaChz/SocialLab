@@ -18,8 +18,10 @@ $(document).ready(function () {
                 '<h3>' + know1[i].name + '</h3>' +
                 '<p>School: ' + know1[i].school + '</p>' +
                 '<p>City: ' + know1[i].city + '</p>' +
-                '<a class="btn">' + 'agregar amigos' + '</a>' +
-                '<a class="btn">' + 'agregar mentors' + '</a>' +
+                '<p>Email: ' + know1[i].email + '</p>' +
+                '<p>Especialidad: ' + know1[i].especialidad + '</p>' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
                 '</div>' +
                 '</div>')
         }
@@ -36,9 +38,11 @@ $(document).ready(function () {
                 '</div>' +
                 '<div class= "col-md-6">' +
                 '<h3>' + followens1[i].name + '</h3>' +
-                '<p>City: ' + followens1[i].city + '</p>' +
-                '<a class="btn">' + 'agregar amigos' + '</a>' +
-                '<a class="btn">' + 'agregar mentors' + '</a>' +
+                '<p>School: ' + followens1[i].school + '</p>' +
+                '<p>Email: ' + followens1[i].email + '</p>' +
+                '<p>Especialidad: ' + followens1[i].especialidad + '</p>' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
                 '</div>' +
                 '</div>')
         }
@@ -54,8 +58,10 @@ $(document).ready(function () {
                 '<div class= "col-md-6">' +
                 '<h3>' + mentors1[i].name + '</h3>' +
                 '<p>City: ' + mentors1[i].city + '</p>' +
-                '<a class="btn">' + 'agregar amigos' + '</a>' +
-                '<a class="btn">' + 'agregar mentors' + '</a>' +
+                '<p>Email: ' + mentors1[i].email + '</p>' +
+                '<p>Especialidad: ' + mentors1[i].especialidad + '</p>' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
                 '</div>' +
                 '</div>')
         }
@@ -71,8 +77,10 @@ $(document).ready(function () {
                 '<div class= "col-md-6">' +
                 '<h3>' + follow1[i].name + '</h3>' +
                 '<p>City: ' + follow1[i].city + '</p>' +
-                '<a class="btn">' + 'agregar amigos' + '</a>' +
-                '<a class="btn">' + 'agregar mentors' + '</a>' +
+                '<p>Email: ' + follow1[i].email + '</p>' +
+                '<p>Especialidad: ' + follow1[i].especialidad + '</p>' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
                 '</div>' +
                 '</div>')
         }
@@ -98,11 +106,19 @@ $(document).ready(function () {
                     '<div class= "col-md-6">' +
                     '<h3>' + allCharacters[i][j].name + '</h3>' +
                     '<p>City: ' + allCharacters[i][j].city + '</p>' +
-                    '<a class="btn">'+ 'agregar amigos' +'</a>'+
-                    '<a class="btn">' + 'agregar mentors' + '</a>' +
+                    '<p>Email: ' + allCharacters[i][j].email + '</p>' +
+                    '<p>Especialidad: ' + allCharacters[i][j].especialidad + '</p>' +
+                    '<button id="btnAmigo"  class="btn">'+ 'agregar amigos' +'</button>'+
+                    '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
                     '</div>' +
                     '</div>')
             }
         }
     })
+
+   function name(params) {
+       
+   }
+
 });
+
