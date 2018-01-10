@@ -6,9 +6,11 @@ body {
 
 
 /* #FFC107 #000000 #333333*/
+
 #navHeader {
     margin-bottom: 10vh;
 }
+
 .flex-splash {
     flex-direction: row;
     background: black;
@@ -16,13 +18,18 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .flexEnd {
     justify-content: flex-end !important;
 }
+
 .between {
     justify-content: space-between;
 }
+
+
 /* style generales*/
+
 .vh100 {
     height: 100vh;
 }
@@ -30,17 +37,20 @@ body {
 .vh45 {
     width: 45vh;
 }
+
 .flex {
     display: flex;
 }
+
+
 /*ventana signUp*/
+
 .signUp {
     background-image: url('../assets/images/fondo.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     justify-content: flex-end;
-    
 }
 
 .flex-item {
@@ -57,6 +67,7 @@ body {
     flex-direction: column-reverse;
     justify-content: space-evenly;
 }
+
 .btncolor {
     background-color: #FFC107;
     color: #000000;
@@ -69,35 +80,62 @@ body {
     background-color: rgba(0, 0, 0, 0.378);
     color: #FFC107;
 }
+
+
 /*ventana signup1*/
+
 .logo {
-	height: auto;
-	width: 70%;
+    height: auto;
+    width: 70%;
 }
+
 .btnSignIn {
     align-items: flex-end;
 }
+
 .btnStyle {
-	background-color: #333333;
-	color: white;
+    background-color: #333333;
+    color: white;
 }
+
 .btnStyle:hover {
-	background-color: black;
-	color: white;
+    background-color: black;
+    color: white;
 }
+
 .line {
     margin-top: 0;
     border: 1px solid #FFC107;
     width: 60%;
 }
+
 .forgotPass {
     font-size: 12px;
 }
+
 .account {
     font-size: 12px;
 }
+
+
+/*ventana login------*/
+
+
+/*-----------------fotter------------------------*/
+
+footer {
+    background-color: green;
+    margin-top: 17em;
+    height: max-content;
+    width: 100%;
+}
+
 @media (min-width: 1280px) {
     .vh45 {
         width: 100vh;
+    }
+    /*-----------------footer----------*/
+    .page-footer img {
+        margin-bottom: 2rem;
     }
 }

@@ -103,13 +103,9 @@ img {
 /*-----------------fotter------------------------*/
 
 .page-footer {
-	background-color: var(--gray1);
-	height: 360px;
+	background-color: green;
+	height: 160px;
 	padding-top: 3rem;
-}
-
-.page-footer .row .text {
-	line-height: 5rem;
 }
 
 @media (min-width: 1280px) {
@@ -134,20 +130,6 @@ img {
 	}
 
 	/*-----------------footer----------*/
-
-	 .page-footer .row .text {
-	 	line-height: 5rem;
-	 }
-
-	 .page-footer .row .icons {
-	 	position: relative;
-	 	top: 38rem;
-	 }
-
-	 .page-footer .row .icons1 {
-	 	position: relative;
-	 	top: 24rem;
-	 }
 
 	 .page-footer img {
 	 	margin-bottom: 2rem;
