@@ -1,6 +1,6 @@
 $('document').ready(function() {  
   /* ventaana profileUser */
-  $('#config').click(function () {
+  $('#config').click(function() {
     window.location.href = 'userConfig.html';
   });
 
@@ -29,7 +29,7 @@ $('document').ready(function() {
       setTimeout(function() {
         now.style.cssText = 'height:auto; padding:0';
         now.style.cssText = 'height:' + now.scrollHeight + 'px';
-      },0);
+      }, 0);
     }
   });
   /* funcion para la hora del post */

@@ -1,7 +1,5 @@
-$(document).ready(function () {
-
- setTimeout(function() {
+$(document).ready(function() {
+  setTimeout(function() {
     window.location.href = 'view/signup.html';
- }, 3000);
-  
+  }, 3000);
 });
