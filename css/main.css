@@ -285,10 +285,18 @@ osease :v minimo mobile */
 /*-----------------fotter------------------------*/
 
 footer {
-   background-color: green;
-   margin-top: 2.5em;
+   background-color: black;
+   color: white;
    height: max-content;
-   width: 57vh;
+   width: 100%;
+   height: auto;
+
+}
+.moving {
+    margin-top: 5vh;
+}
+.alt {
+    margin-top: 10px;
 }
 
 @media (min-width: 1280px) {
@@ -296,14 +304,13 @@ footer {
         width: 100vh;
     }
     /*-----------------footer----------*/
-    .page-footer img {
-        margin-bottom: 2rem;
-    }
-    footer {
-        
+    
+    footer { 
         width: 100%;
     }
-
+    .stay {
+        margin-top: 10px;
+    }
 
 #insert-post {
         margin-bottom: 6%;
