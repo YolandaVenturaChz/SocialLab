@@ -173,7 +173,6 @@ body {
     padding: 10px;
 }
 #inputPost {
-    float: left;
     width: 60%;
     display: inline-block;
     margin-left:15%;
@@ -281,6 +280,32 @@ osease :v minimo mobile */
     background-color: rgba(26, 26, 26, 0.385);
     box-shadow: 2px 2px 2px gray;
 }
+
+
+/*-----------------fotter------------------------*/
+
+footer {
+   background-color: green;
+   margin-top: 2.5em;
+   height: max-content;
+   width: 57vh;
+}
+
+@media (min-width: 1280px) {
+    .vh45 {
+        width: 100vh;
+    }
+    /*-----------------footer----------*/
+    .page-footer img {
+        margin-bottom: 2rem;
+    }
+    footer {
+        
+        width: 100%;
+    }
+
+
 #insert-post {
-    margin-bottom: 6%;
+        margin-bottom: 6%;
+    }
 }
