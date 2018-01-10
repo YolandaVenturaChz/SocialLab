@@ -28,8 +28,6 @@ Este reto consiste en realizar una página, para ello se utilizará una estructu
 * Desplegar el producto en Github Pages
 * Opcional, si se desarrolla un login o se desea almacenar la información en una base de datos, usar Firebase.
 
-
-
 ## La estructura de la página es la siguiente:
 
 ### Vista desktop:
