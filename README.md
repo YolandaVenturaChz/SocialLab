@@ -1,4 +1,4 @@
-# Reto de Código - RED SOCIAL X
+# Reto de Código - SOCIALLAB
 
 * **Track:** _Common Core_
 * **Curso:** _Crea tu propia red social_
