@@ -81,9 +81,9 @@ body {
 /* segunda section informacicon del usuario */
 #sectionInfo {
 	/*outline: 1px solid red;*/
-	height: auto;
+	height: 100%;
     padding-bottom: 10px;
-    box-shadow: 1px 1px 1px gray;
+    border-right: 1px dotted gray;
 }
 .logofront {
 	width: 50px;
@@ -180,7 +180,7 @@ body {
     margin-right: 10px;
 }
 .footEnd {
-    background-color: #333333;
+    background-color: #000000;
     color: white;
     width: 100%;
     height: 7vh;
@@ -280,6 +280,7 @@ osease :v minimo mobile */
     background-color: rgba(26, 26, 26, 0.385);
     box-shadow: 2px 2px 2px gray;
 }
+<<<<<<< HEAD
 
 /*-----------------fotter------------------------*/
 
@@ -303,4 +304,8 @@ footer {
         width: 100%;
     }
 
+=======
+#insert-post {
+    margin-bottom: 6%;
+>>>>>>> 67fb16258acf9ce36f86714817e07138d4d2a805
 }
