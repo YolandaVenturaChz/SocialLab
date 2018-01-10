@@ -201,7 +201,7 @@ osease :v minimo mobile */
 @media only screen and (max-width:320px){
     .userInfo h4 {
 	    display: inline-block;
-        float: left;
+       
 	    margin-top: 10px;
     }
     .userInfo > a {

@@ -1,13 +1,9 @@
-$('document').ready(function() { 
-  /* ventana inicio*/
-  $('#config').click(function() {
-    window.location.href = 'userConfig.html';
-  });
-  
+$('document').ready(function() {  
   /* ventaana profileUser */
-  $('#btnSignIn').click(function() {
+  $('#config').click(function () {
     window.location.href = 'userConfig.html';
   });
+
   /* funcionalidad a los post del usuario*/
   var textArea = $('#inputPost');
   var boton = $('#post');

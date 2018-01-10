@@ -1,50 +1,157 @@
 .character {
-    margin: 2em 0;
-    background: ghostwhite;
+	margin: 0.8em 0;
+	background: ghostwhite;
 }
+
 body {
-    font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
+
+
 /* #FFC107 #000000 #333333*/
+
 #navHeader {
 	padding-left: 0;
 	padding-right: 0;
 }
+
 .logo {
 	height: auto;
 	width: 70%;
 }
+
 .input-group {
 	margin-right: 5px;
 }
+
 .btnStyle {
 	background-color: #333333;
 	color: white;
 }
+
 .spaceDown {
-    margin-bottom: 10px;
-    
+	margin-bottom: 10px;
 }
+
 .btnStyle:hover {
 	background-color: black;
 	color: white;
 }
+
 .btnStyle:hover {
 	background-color: black;
 	color: white;
 }
+
 .main {
-    margin-top: 61px;
-    background: url('../assets/images/backgroundOne.jpeg');
-    background-size: cover;
-    background-position: center center;
+	margin-top: 61px;
+	background: url('../assets/images/backgroundOne.jpeg');
+	background-size: cover;
+	background-position: center center;
 }
+
 img {
-    width: 30%;
+	width: 50%;
+}
+
+.btn-sm {
+	padding: 7px 6px;
+	font-size: 12px;
+	line-height: 1.5;
+	border-radius: 3px;
+}
+
+.main1 {
+	background: url('../assets/images/backgroundOne.jpeg');
+	background-size: cover;
+	background-position: center center;
 }
 
 .col-md-6 {
-    background: rgb(247, 151, 7);
+	background: rgb(247, 151, 7);
 }
-/* medias query 
-Mobile Min */
+
+
+/* zona flex---------------------------------*/
+
+.vh100 {
+	height: 100vh;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+}
+
+.flex-padre {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-item {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	align-items: center;
+}
+/*-----------------fotter------------------------*/
+
+.page-footer {
+	background-color: var(--gray1);
+	height: 360px;
+	padding-top: 3rem;
+}
+
+.page-footer .row .text {
+	line-height: 5rem;
+}
+
+@media (min-width: 1280px) {
+	.btn-sm {
+		width: 50%;
+		height: 50px;
+		font-size: 20px;
+	}
+	img {
+		width: 100%;
+	}
+	.flex-item {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+		align-items: center;
+		width: 600px;
+	}
+	.flex-around {
+		display: flex;
+		width: 50%;
+	}
+
+	/*-----------------footer----------*/
+
+	 .page-footer .row .text {
+	 	line-height: 5rem;
+	 }
+
+	 .page-footer .row .icons {
+	 	position: relative;
+	 	top: 38rem;
+	 }
+
+	 .page-footer .row .icons1 {
+	 	position: relative;
+	 	top: 24rem;
+	 }
+
+	 .page-footer img {
+	 	margin-bottom: 2rem;
+	 }
+	
+
+}

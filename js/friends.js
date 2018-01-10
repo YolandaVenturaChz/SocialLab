@@ -5,120 +5,94 @@ $(document).ready(function () {
     var mentors1 = data. mentors.characters;
     var knowfollow1 = data.knowfollow.characters;
 
-    // dando funcionabilidad al btn-know
-    $('.btn-know').click(function () {
-        for (var i = 0; i < know1.length; i++) {
-
-            $('.followems, .mentors, .knowPeole').empty(); //a los divs se les remueve todos sus hijos
-            $('.know').append('<div class="row character">' +
-                '<div class= "col-md-6 text-center">' +
-                '<img src="../assets/' + know1[i].picture + '">' +
-                '</div>' +
-                '<div class= "col-md-6">' +
-                '<h3>' + know1[i].name + '</h3>' +
-                '<p>School: ' + know1[i].school + '</p>' +
-                '<p>City: ' + know1[i].city + '</p>' +
-                '<p>Email: ' + know1[i].email + '</p>' +
-                '<p>Especialidad: ' + know1[i].especialidad + '</p>' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
-                '</div>' +
-                '</div>')
-        }
-    })
-
-    // utilizando hide() y show()
+    
+    // utilizando hide() y show() rimero
 
     $('.btn-followems').click(function () {
+        $('.main1').hide();
         for (var i = 0; i < followens1.length; i++) {
+           
             $('.know, .mentors, .knowPeole').empty();
-            $('.followems').append('<div class="row character">' +
+            $('.followems').append('<div class="row character flex-item">' +
                 '<div class= "col-md-6 text-center">' +
                 '<img src="../assets/' + followens1[i].picture + '">' +
                 '</div>' +
                 '<div class= "col-md-6">' +
                 '<h3>' + followens1[i].name + '</h3>' +
-                '<p>School: ' + followens1[i].school + '</p>' +
-                '<p>Email: ' + followens1[i].email + '</p>' +
-                '<p>Especialidad: ' + followens1[i].especialidad + '</p>' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
+                '<p>' + followens1[i].email + '</p>' +
+                '<div class= "btns flex-around">' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '</div>' +
                 '</div>' +
                 '</div>')
         }
+      
     })
+    
 
     $('.btn-mentors').click(function () {
+        $('.main1').hide();
         for (var i = 0; i < mentors1.length; i++) {
+            
             $('.followems, .know, .knowPeole').empty();
-            $('.mentors').append('<div class="row character">' +
+            $('.mentors').append('<div class="row character flex-item">' +
                 '<div class= "col-md-6 text-center">' +
                 '<img src="../assets/' + mentors1[i].picture + '">' +
                 '</div>' +
                 '<div class= "col-md-6">' +
                 '<h3>' + mentors1[i].name + '</h3>' +
-                '<p>City: ' + mentors1[i].city + '</p>' +
-                '<p>Email: ' + mentors1[i].email + '</p>' +
-                '<p>Especialidad: ' + mentors1[i].especialidad + '</p>' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
+                '<p> ' + mentors1[i].email + '</p>' +
+                '<div class= "btns flex-around">' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar ' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '</div>' +
                 '</div>' +
                 '</div>')
         }
+       
     })
-
-    $('.btn-follow').click(function () {
-        for (var i = 0; i < follow1.length; i++) {
-            $('.followems, .mentors, .know').empty();
-            $('.follow').append('<div class="row character">' +
-                '<div class= "col-md-6 text-center color">' +
-                '<img src="../assets/' + follow1[i].picture + '">' +
-                '</div>' +
-                '<div class= "col-md-6">' +
-                '<h3>' + follow1[i].name + '</h3>' +
-                '<p>City: ' + follow1[i].city + '</p>' +
-                '<p>Email: ' + follow1[i].email + '</p>' +
-                '<p>Especialidad: ' + follow1[i].especialidad + '</p>' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar amigos' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
-                '</div>' +
-                '</div>')
-        }
-    })
-
- //todos 
-
-    var allCharacters = [];
 
     $('.btn-knowPeople').click(function () {
-        $('.followems, .mentors, .know').empty();
-       
-        for (var i in data) {
-            allCharacters.push(data[i].characters);
+        $('.main1').hide();
+        for (var i = 0; i < knowfollow1.length; i++) {
+          
+            $('.followems, .mentors').empty();
+            $('.knowPeople').append('<div class="row character flex-item">' +
+                '<div class= "col-md-6 text-center color">' +
+                '<img src="../assets/' + knowfollow1[i].picture + '">' +
+                '</div>' +
+                '<div class= "col-md-6">' +
+                '<h3>' + knowfollow1[i].name + '</h3>' +
+                '<p>' + knowfollow1[i].email + '</p>' +
+                '<div class= "btns flex-around">' +
+                '<button id="btnAmigo"  class="btn">' + 'agregar ' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>')
         }
        
-        for (var i = 0; i < allCharacters.length; i++) {
-            for (var j = 0; j < allCharacters.length; j++) {
-                $('.knowPeople').append('<div class="row character">' +
-                    '<div class= "col-md-6 text-center">' +
-                    '<img src="../assets/' + allCharacters[i][j].picture + '">' +
-                    '</div>' +
-                    '<div class= "col-md-6">' +
-                    '<h3>' + allCharacters[i][j].name + '</h3>' +
-                    '<p>City: ' + allCharacters[i][j].city + '</p>' +
-                    '<p>Email: ' + allCharacters[i][j].email + '</p>' +
-                    '<p>Especialidad: ' + allCharacters[i][j].especialidad + '</p>' +
-                    '<button id="btnAmigo"  class="btn">'+ 'agregar amigos' +'</button>'+
-                    '<button id="btnMentors"  class="btn">' + 'agregar mentors' + '</button>' +
-                    '</div>' +
-                    '</div>')
-            }
-        }
+    });
+    
+    $('.btn-inicio').click(function () {
+        $('.followems, .mentors, .know, .knowPeople').empty();
+        $('.main1').show();
+
+    });    
+  
+        
+    
+     $('#btnAmigo').click(function () {
+         alert('mandamos una solicitud de amistad');
+     })
+
+    $('#btnBloqueo').click(function () {
+        alert('Eliminamos ');
     })
 
-   function name(params) {
-       
-   }
 
 });
 
+
+ 
