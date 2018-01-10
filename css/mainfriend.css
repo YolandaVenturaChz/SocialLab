@@ -44,13 +44,13 @@ body {
 }
 
 .main {
-	margin-top: 61px;
-	background: url('../assets/images/backgroundOne.jpeg');
+    width: 100%;
+	margin-top: 7.6vh;
 	background-size: cover;
 	background-position: center center;
 }
 
-img {
+.img {
 	width: 50%;
 }
 
@@ -62,15 +62,11 @@ img {
 }
 
 .main1 {
-	background: url('../assets/images/backgroundOne.jpeg');
+    margin-left: 15%;
+    width: 100%;
 	background-size: cover;
 	background-position: center center;
 }
-
-.col-md-6 {
-	background: rgb(247, 151, 7);
-}
-
 
 /* zona flex---------------------------------*/
 
@@ -96,9 +92,47 @@ img {
 
 .flex-item {
 	display: flex;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
+}
+.flex-item img {
+    border-radius: 10px 0px 0px 10px;
+}
+.block-info {
+    float: left;
+    background-color: black;
+}
+.flex-item a {
+    color: white;
+}
+.conteiner-buttons {
+    width: 100%;
+}
+.container-buttons button{
+ /* 25% */
+    padding: 5px;
+}
+#btnAmigo, #btnBloqueo, #btnMentors {
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+#btnAmigo {
+    background-color: white;
+    color: black;
+}
+#btnBloqueo {
+    background-color: #FFC107;
+    padding: 3px;
+}
+#btnMentors {
+    background-color: #FFC107;
+    padding: 3px;
 }
 /*-----------------fotter------------------------*/
 
@@ -113,12 +147,18 @@ img {
 }
 
 @media (min-width: 1280px) {
+    .main {
+        margin-top: 8.7vh;
+    }
+    .main1 {
+        margin-left: 0%;
+    }
 	.btn-sm {
 		width: 50%;
 		height: 50px;
 		font-size: 20px;
 	}
-	img {
+	.img {
 		width: 100%;
 	}
 	.flex-item {
@@ -132,7 +172,13 @@ img {
 		display: flex;
 		width: 50%;
 	}
-
+    .container-buttons {
+        margin-top: 10px;
+        margin-left: 50vh;
+    }
+    .container-buttons button {
+        padding: 10px;
+    }
 	/*-----------------footer----------*/
 
 	 .page-footer .row .text {

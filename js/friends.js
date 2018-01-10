@@ -2,7 +2,7 @@ $(document).ready(function () {
    
     var know1 = data.know.characters;
     var followens1 = data.followens.characters;
-    var mentors1 = data. mentors.characters;
+    var mentors1 = data.mentors.characters;
     var knowfollow1 = data.knowfollow.characters;
 
     
@@ -17,12 +17,12 @@ $(document).ready(function () {
                 '<div class= "col-md-6 text-center">' +
                 '<img src="../assets/' + followens1[i].picture + '">' +
                 '</div>' +
-                '<div class= "col-md-6">' +
+                '<div class= "col-md-6 block-info">' +
                 '<h3>' + followens1[i].name + '</h3>' +
                 '<p>' + followens1[i].email + '</p>' +
                 '<div class= "btns flex-around">' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '<button id="btnAmigo"  class="btn">' + 'Agregar' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>')
@@ -40,12 +40,12 @@ $(document).ready(function () {
                 '<div class= "col-md-6 text-center">' +
                 '<img src="../assets/' + mentors1[i].picture + '">' +
                 '</div>' +
-                '<div class= "col-md-6">' +
+                '<div class= "col-md-6 block-info">' +
                 '<h3>' + mentors1[i].name + '</h3>' +
                 '<p> ' + mentors1[i].email + '</p>' +
                 '<div class= "btns flex-around">' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar ' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '<button id="btnAmigo"  class="btn">' + 'Agregar ' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>')
@@ -62,12 +62,12 @@ $(document).ready(function () {
                 '<div class= "col-md-6 text-center color">' +
                 '<img src="../assets/' + knowfollow1[i].picture + '">' +
                 '</div>' +
-                '<div class= "col-md-6">' +
+                '<div class= "col-md-6 block-info">' +
                 '<h3>' + knowfollow1[i].name + '</h3>' +
                 '<p>' + knowfollow1[i].email + '</p>' +
                 '<div class= "btns flex-around">' +
-                '<button id="btnAmigo"  class="btn">' + 'agregar ' + '</button>' +
-                '<button id="btnMentors"  class="btn">' + 'bloquear' + '</button>' +
+                '<button id="btnAmigo"  class="btn">' + 'Agregar ' + '</button>' +
+                '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
                 '</div>' +
                 '</div>' +
                 '</div>')
@@ -84,11 +84,11 @@ $(document).ready(function () {
         
     
      $('#btnAmigo').click(function () {
-         alert('mandamos una solicitud de amistad');
+         alert('Solicitud de amistad enviada');
      })
 
     $('#btnBloqueo').click(function () {
-        alert('Eliminamos ');
+        alert('Eliminado');
     })
 
 
