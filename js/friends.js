@@ -11,20 +11,25 @@ $(document).ready(function () {
     $('.main1').hide();
     for (var i = 0; i < followens1.length; i++) {
       $('.know, .mentors, .knowPeole').empty();
-      $('.followems').append('<div class="row character flex-item">' +
-        '<div class= "col-md-6 text-center">' +
-        '<img src="../assets/' + followens1[i].picture + '">' +
+      $('.followems').append('<div class="row character flex-container">' +
+        '<div class= "col-md-8 col-md-offset-1 flex">' +
+        '<div class= "col-md-12 flex-item">' +
+        '<div class= "col-md-4">' +
+         '<a class="btn" data-toggle= "modal" data-target="#myModal">' + '<img class= "pull-right" src="../assets/' + followens1[i].picture + '">' + '</a>' +
         '</div>' +
-        '<div class= "col-md-6 block-info">' +
+        '<div class= "col-md-4">' +
         '<h3>' + followens1[i].name + '</h3>' +
-        '<p>' + followens1[i].email + '</p>' +
+        '<p>' + '<a>' + followens1[i].email + '</a>' + '</p>' +
         '<div class= "btns flex-around">' +
-        '<button id="btnAmigo"  class="btn">' + 'Agregar' + '</button>' +
-        '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
+        '<button id="btnAmigo"style= "color: black">' + 'Dejar de Seguir' + '</button>' +
+        '</div>' +
         '</div>' +
         '</div>' +
         '</div>');
     }
+    $('#btnAmigo').click(function () {
+      alert('Haz dejado de Seguir a esta persona ...');
+    });
   });
 
 
@@ -32,60 +37,72 @@ $(document).ready(function () {
     $('.main1').hide();
     for (var i = 0; i < mentors1.length; i++) {
       $('.followems, .know, .knowPeole').empty();
-      $('.mentors').append('<div class="row character flex-item">' +
-        '<div class= "col-md-6 text-center">' +
-        '<img src="../assets/' + mentors1[i].picture + '">' +
+      $('.mentors').append('<div class="row character flex-container">' +
+        '<div class= "col-md-8 col-md-offset-1 flex">' +
+        '<div class= "col-md-12 flex-item">' +
+        '<div class= "col-md-4">' +
+         '<a class="btn" data-toggle= "modal" data-target="#myModal3">' + '<img class= "pull-right" src="../assets/' + mentors1[i].picture + '">' + '</a>' +
         '</div>' +
-        '<div class= "col-md-6 block-info">' +
+        '<div class= "col-md-4">' +
         '<h3>' + mentors1[i].name + '</h3>' +
-        '<p> ' + mentors1[i].email + '</p>' +
-        '<div class= "btns flex-around">' +
-        '<button id="btnAmigo"  class="btn">' + 'Agregar ' + '</button>' +
-        '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
+        '<p>' + '<a>' + mentors1[i].email + '</a>' + '</p>' +
+        '<button alert() id="btnMentor">' + 'Agregar mentor ' + '</button>' +
         '</div>' +
         '</div>' +
         '</div>');
     }
+    $('#btnMentor').click(function () {
+      alert('Solicitud enviada');
+    });
+    
   });
 
   $('.btn-knowPeople').click(function () {
+
     $('.main1').hide();
     for (var i = 0; i < knowfollow1.length; i++) {
       $('.followems, .mentors').empty();
-      $('.knowPeople').append('<div class="row character flex-item">' +
-        '<div class= "col-md-6 text-center color">' +
-        '<img src="../assets/' + knowfollow1[i].picture + '">' +
+      $('.knowPeople').append('<div class="row character flex-container">' +
+        '<div class= "col-md-8 col-md-offset-1 flex">' +
+        '<div class= "col-md-12 flex-item">' +
+        '<div class= "col-md-4">' +
+        '<a class="btn" data-toggle= "modal" data-target="#myModal2">' + '<img class= "pull-right" src="../assets/' + knowfollow1[i].picture + '">' + '</a>' +
         '</div>' +
-        '<div class= "col-md-6 block-info">' +
+        '<div class= "col-md-4">' +
         '<h3>' + knowfollow1[i].name + '</h3>' +
-        '<p>' + knowfollow1[i].email + '</p>' +
-        '<div class= "btns flex-around">' +
-        '<button id="btnAmigo"  class="btn">' + 'Agregar ' + '</button>' +
-        '<button id="btnMentors"  class="btn">' + 'Bloquear' + '</button>' +
+        '<p>' + '<a>' + knowfollow1[i].email + '</a>' + '</p>' +
+        '<button  id="btnSeguidoresBlock" style= "color: black">' + 'Bloquear' + '</button>' +
         '</div>' +
         '</div>' +
         '</div>');
     }
+    $('#btnSeguidoresBlock').click(function () {
+      alert('Bloqueado!');
+    });
+
   });
+
 
   $('.btn-inicio').click(function () {
     $('.followems, .mentors, .know, .knowPeople').empty();
     $('.main1').show();
   });
 
-  function hijo() {
 
+  $('#btnAmigo').click(function () {
+    alert('Solicitud de amistad enviada');
+  });
 
-    $('#btnAmigo').click(function () {
-      event.preventDefault();
-      alert('Solicitud de amistad enviada');
-    });
+  $('#btnBloqueo').click(function () {
+    event.preventDefault();
+    alert('Eliminado');
+  });
 
-    $('#btnBloqueo').click(function () {
-      event.preventDefault();
-      alert('Eliminado');
-    });
-  }
-  hijo()
+// creando la interactividad del modal
+  $('#Enlace, #Enlace2, #Enlace3').click(function () {
+    window.location.href = 'profileUser.html';
+  });
+
+ 
 
 });

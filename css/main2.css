@@ -1,0 +1,97 @@
+body {
+    outline: 1px solid red;
+}
+
+.pull-left {
+    float: left !important;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.main {
+    outline: 1px solid green;
+    margin-top: 50px;
+}
+
+.rowMain {
+    background: #333;
+}
+
+.btnFriends {
+    padding: 2px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.btn-sm {
+    font-size: 13px;
+    color: white;
+}
+
+.btn-sm:hover {
+    color: #FFC107;
+}
+
+#btnMentor, #btnSeguidoresBlock, #btnAmigo {
+    color: black;
+    background: #FFC107;
+    border: none;
+}
+
+    #btnMentor:hover, #btnAmigo:hover, #btnSeguidoresBlock:hover {
+    background: #333;
+}
+
+.flex {
+    display: flex;
+    padding: 1em;
+}
+
+.hola {
+    background: black;
+}
+
+
+/*zona flex*/
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: aliceblue;
+}
+
+button {
+    color: black;
+}
+
+footer {
+    background: #333;
+    color: white;
+}
+
+
+/*modales...............*/
+
+#myModal .modal-body, #myModal2 .modal-body, #myModal3 .modal-body{
+   background: black;
+   color: white;
+
+}
+#myModal img, #myModal2 img , #myModal3 img {
+    width: 20%;
+}
+@media (min-width: 1280px) {
+    .btn-sm {
+        font-size: 25px;
+    }
+}
+

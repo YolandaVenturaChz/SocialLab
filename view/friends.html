@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SocialLab</title>
     <link rel="stylesheet" href="../vendors/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/mainfriend.css">
+    <link rel="stylesheet" href="../css/main2.css">
 </head>
 
 <body>
@@ -47,86 +47,95 @@
     <section class="main ">
         <div class="container-fluid">
             <!-- Botones para mostrar amigos - mentores - conocidos -seguidores -->
-            <div class="row flex center-block container-buttons">
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-lg btn-warning btn-followems">Siguiendo</button>
-                </div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-lg btn-warning btn-mentors">Mentores</button>
-                </div>
-                <!-- Botón para mostrar las personas que quizas conocemos , mentores amigos ,etc -->
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-lg btn-warning btn-knowPeople">Conocidos</button>
-                </div>
-                <div class="col-md-2">
-                    <button type="button" class="btn btn-lg btn-warning btn-inicio">Inicio</button>
+            <div class="row rowMain">
+                <div class="col-md-12 col-xs-12 mainBtn">
+                    <div class="col-md-3 col-xs-3 btnFriends">
+                        <a type="button" class="btn btn-sm  btn-followems ">Siguiendo</a>
+
+                    </div>
+                    <div class="col-md-3 col-xs-3 btnFriends">
+                        <a type="button" class="btn btn-sm  btn-mentors ">Mentores</a>
+
+                    </div>
+                    <!-- Botón para mostrar las personas que quizas conocemos , mentores amigos ,etc -->
+                    <div class="col-md-3 col-xs-3 btnFriends">
+                        <a type="button" class="btn btn-sm  btn-knowPeople ">Seguidores</a>
+
+                    </div>
+                    <div class="col-md-3 col-xs-3 btnFriends">
+                        <a type="button" class="btn btn-sm  btn-inicio ">Conocidos</a>
+                    </div>
                 </div>
             </div>
-
-            <!-- div vacío donde irán las personas conocidas -->
-            <div class="know flex-padre"></div>
-
-            <!-- div vacío donde irán las personas que nos siguen -->
-            <div class="followems flex-padre"></div>
-
-            <!-- div vacío donde irán los mentores -->
-            <div class="mentors flex-padre"></div>
-
-            <!-- div vacío donde irán todas los personas que quizas conocemos -->
-            <div class="knowPeople flex-padre "></div>
         </div>
+
+        <!-- div vacío donde irán las personas conocidas -->
+        <div class="know "></div>
+
+        <!-- div vacío donde irán las personas que nos siguen -->
+        <div class="followems "></div>
+
+        <!-- div vacío donde irán los mentores -->
+        <div class="mentors "></div>
+
+        <!-- div vacío donde irán todas los personas que quizas conocemos -->
+        <div class="knowPeople  "></div>
+
     </section>
     <section class="main1">
-        <div class="container ">
-            <div class="row flex-padre vh100">
-                <div class="flex-around">
-                    <div class="flex-item">
-                        <div>
+        <div class="container">
+            <div class="row flex-container">
+                <div class="flex col-md-8 col-md-offset-1 col-xs-12 ">
+                    <div class="col-md-12 col-xs-12  flex-item">
+                        <div class="col-md-4 col-xs-6 ">
                             <picture>
-                                <img src="../assets/images/followems/analucia.jpg" alt="">
+                                <a class="btn" data-toggle="modal" data-target="#myModal">                     
+                                <img class="pull-right" src="../assets/images/followems/analucia.jpg" alt="">
+                                </a>
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-md-4 col-xs-6">
                             <h3>nombre</h3>
                             <p>
                                 <a href="">user@email.com</a>
                             </p>
                             <button id="btnAmigo">Agregar</button>
-                            <button id="btnBloqueo">Bloquear</button>
                         </div>
                     </div>
                 </div>
-                <div class="flex-around">
-                    <div class="flex-item">
-                        <div>
+                <div class="flex col-md-8 col-md-offset-1 col-xs-12 ">
+                    <div class="col-md-12 col-xs-12 flex-item">
+                        <div class="col-md-4 col-xs-6" >
                             <picture>
-                                <img src="../assets/images/followems/analucia.jpg" alt="">
+                                <a class="btn" data-toggle="modal" data-target="#myModal">
+                                <img class="pull-right" src="../assets/images/followems/analucia.jpg" alt="">
+                                </a>
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-md-4 col-xs-6">
                             <h3>nombre</h3>
                             <p>
                                 <a href="">user@email.com</a>
                             </p>
-                            <button id="btnAmigo">Agregar</button>
-                            <button id="btnBloqueo">Bloquear</button>
+                            <button class="btn-md" id="btnAmigo">Agregar</button>
                         </div>
                     </div>
                 </div>
-                <div class="flex-around">
-                    <div class="flex-item">
-                        <div>
+                <div class="flex col-md-8  col-md-offset-1 col-xs-12 ">
+                    <div class="col-md-12 col-xs-12 flex-item">
+                        <div class="col-md-4 col-xs-6" id="boxModal">
                             <picture>
-                                <img src="../assets/images/followems/analucia.jpg" alt="">
+                                <a class="btn" data-toggle="modal" data-target="#myModal">
+                                <img class="pull-right" src="../assets/images/followems/analucia.jpg" alt="">
+                                </a>
                             </picture>
                         </div>
-                        <div>
+                        <div class="col-md-4 col-xs-6">
                             <h3>nombre</h3>
                             <p>
                                 <a href="">user@email.com</a>
                             </p>
                             <button id="btnAmigo">Agregar</button>
-                            <button id="btnBloqueo">Bloquear</button>
                         </div>
                     </div>
                 </div>
@@ -134,13 +143,92 @@
         </div>
 
     </section>
+
+    <!-- Modal1 conocidos-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body modalFirst">
+                    <h1>Te invito a que me sigas</h1>
+                    <h3>Estudiado Ingienieria de Sistemas</h3>
+                    <p>Me encanta bailar y sobre todo Codear</p>
+                    <img src="../assets/images/ux.png" alt="">
+                    <img class="pull-right" src="../assets/images/followems/analucia.jpg" alt="">
+                    ...Por ahora me dedico a UX 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" id ="Enlace"  class="btn btn-warning">PERFIL</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Modal2 amigos-->
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>Te invito a que me sigas</h1>
+                    <h3>Estudiado Ingienieria de Sistemas</h3>
+                    <p>Me encanta bailar y sobre todo Codear</p>
+                    <img src="../assets/images/ux.png" alt="">
+                    <img class="pull-right" src="../assets/images/know/ana.jpg" alt=""> ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id ="Enlace2" type="button" class="btn btn-warning">PERFIL</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+    <!-- Modal3 mentores -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <h1>Te invito a que me sigas</h1>
+                    <h3>Estudiado Ingienieria de Sistemas</h3>
+                    <p>Me encanta bailar y sobre todo Codear</p>
+                    <img src="../assets/images/ux.png" alt="">
+                    <img class="pull-right" src="../assets/images/knowfollow/carladavila.jpg" alt=""> ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button"  id ="Enlace3" class="btn btn-warning">PERFIL</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <!------foooteeer-------->
-    <footer class="container-fluid page-footer prove">
+    <footer class="">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-5">
                     <span class="col-md-12">
-                        <img class="col-md-6 col-md-offset-4 col-xs-9 col-xs-offset-0" class ="logoFooter"src="../assets/images/logoLab.png" alt="logo">
+                        <img class="col-md-6 col-md-offset-4 col-xs-9 col-xs-offset-0" class="logoFooter" src="../assets/images/logoLab.png" alt="logo">
                     </span>
                 </div>
                 <br>

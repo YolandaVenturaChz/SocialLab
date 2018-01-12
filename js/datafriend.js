@@ -71,13 +71,13 @@ var data = {
 
     },
     {
-      'name': 'Mike Wheeler',
+      'name': 'Mili Wheeler',
       'picture': 'images/know/ana.jpg',
       'email': 'user19@gmail.com',
 
     },
     {
-      'name': 'Lucas Sinclair',
+      'name': 'Lucia Sinclair',
       'picture': 'images/know/ana.jpg',
       'email': 'user20@gmail.com',
 

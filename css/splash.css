@@ -119,7 +119,9 @@ body {
 
 
 /*ventana login------*/
-
+.mainLogin {
+   margin-bottom: 13em;
+}
 
 /*-----------------fotter------------------------*/
 
