@@ -6,9 +6,7 @@ body {
     float: left !important;
 }
 
-.pull-right {
-    float: right !important;
-}
+
 
 .main {
     outline: 1px solid green;
@@ -34,13 +32,17 @@ body {
     color: #FFC107;
 }
 
-#btnMentor, #btnSeguidoresBlock, #btnAmigo {
+#btnMentor,
+#btnSeguidoresBlock,
+#btnAmigo {
     color: black;
     background: #FFC107;
     border: none;
 }
 
-    #btnMentor:hover, #btnAmigo:hover, #btnSeguidoresBlock:hover {
+#btnMentor:hover,
+#btnAmigo:hover,
+#btnSeguidoresBlock:hover {
     background: #333;
 }
 
@@ -81,17 +83,37 @@ footer {
 
 /*modales...............*/
 
-#myModal .modal-body, #myModal2 .modal-body, #myModal3 .modal-body{
-   background: black;
-   color: white;
-
+#myModal .modal-body,
+#myModal2 .modal-body,
+#myModal3 .modal-body {
+    background: black;
+    color: white;
+    width: 95%;
 }
-#myModal img, #myModal2 img , #myModal3 img {
+
+#myModal .modalFirst {
+    width: 100%;
+}
+
+#myModal2 .modal-footer,
+#myModal3 .modal-footer {
+    background: black;
+    color: white;
+    width: 90%;
+}
+
+#myModal img,
+#myModal2 img,
+#myModal3 img {
     width: 20%;
 }
+
 @media (min-width: 1280px) {
     .btn-sm {
         font-size: 25px;
     }
-}
 
+    .pull-right {
+        float: right !important;
+    }
+}
