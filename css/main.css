@@ -14,7 +14,6 @@ body {
     height: auto;
     width: 70%;
 }
-
 .input-group {
     margin-right: 5px;
 }
@@ -285,6 +284,17 @@ osease :v minimo mobile */
     .friendsMentors {
         padding: 1px;
     }
+    #inputPost {
+        margin-left: 0;
+    }
+    #post {
+        margin-left: 0;
+        margin-right: 0;
+        float: left;
+    }
+    .description {
+        margin: 0px 2vh;
+    }
 }
 
 
@@ -294,17 +304,8 @@ osease :v minimo mobile */
     .containerUser {
         padding-right: 10vh;
     }
-    .description {
-        margin-left: 1vh;
-    }
     .emailUser {
         margin: 10px 10vh;
-    }
-}
-
-@media only screen and (min-width:750px) {
-    .description {
-        margin-left: 4vh;
     }
 }
 
