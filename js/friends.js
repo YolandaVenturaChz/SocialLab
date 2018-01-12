@@ -1,13 +1,15 @@
-$(document).ready(function () {
+$(document).ready(function() {
   var know1 = data.know.characters;
   var followens1 = data.followens.characters;
   var mentors1 = data.mentors.characters;
   var knowfollow1 = data.knowfollow.characters;
 
-
+  $('#home').click(function() {
+    window.location.href = 'profileUser.html';
+  });
   // utilizando hide() y show() rimero
 
-  $('.btn-followems').click(function () {
+  $('.btn-followems').click(function() {
     $('.main1').hide();
     for (var i = 0; i < followens1.length; i++) {
       $('.know, .mentors, .knowPeole').empty();
@@ -27,13 +29,13 @@ $(document).ready(function () {
         '</div>' +
         '</div>');
     }
-    $('#btnAmigo').click(function () {
+    $('#btnAmigo').click(function() {
       alert('Haz dejado de Seguir a esta persona ...');
     });
   });
 
 
-  $('.btn-mentors').click(function () {
+  $('.btn-mentors').click(function() {
     $('.main1').hide();
     for (var i = 0; i < mentors1.length; i++) {
       $('.followems, .know, .knowPeole').empty();
@@ -51,14 +53,12 @@ $(document).ready(function () {
         '</div>' +
         '</div>');
     }
-    $('#btnMentor').click(function () {
+    $('#btnMentor').click(function() {
       alert('Solicitud enviada');
     });
-    
   });
 
-  $('.btn-knowPeople').click(function () {
-
+  $('.btn-knowPeople').click(function() {
     $('.main1').hide();
     for (var i = 0; i < knowfollow1.length; i++) {
       $('.followems, .mentors').empty();
@@ -76,33 +76,30 @@ $(document).ready(function () {
         '</div>' +
         '</div>');
     }
-    $('#btnSeguidoresBlock').click(function () {
+    $('#btnSeguidoresBlock').click(function() {
       alert('Bloqueado!');
     });
 
   });
 
 
-  $('.btn-inicio').click(function () {
+  $('.btn-inicio').click(function() {
     $('.followems, .mentors, .know, .knowPeople').empty();
     $('.main1').show();
   });
 
 
-  $('#btnAmigo').click(function () {
+  $('#btnAmigo').click(function() {
     alert('Solicitud de amistad enviada');
   });
 
-  $('#btnBloqueo').click(function () {
+  $('#btnBloqueo').click(function() {
     event.preventDefault();
     alert('Eliminado');
   });
 
-// creando la interactividad del modal
-  $('#Enlace, #Enlace2, #Enlace3').click(function () {
+  // creando la interactividad del modal
+  $('#Enlace, #Enlace2, #Enlace3').click(function() {
     window.location.href = 'profileUser.html';
   });
-
- 
-
 });
