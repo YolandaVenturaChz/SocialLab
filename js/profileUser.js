@@ -3,7 +3,9 @@ $('document').ready(function() {
   $('#config').click(function() {
     window.location.href = 'userConfig.html';
   });
-
+  $('#home').click(function() {
+    window.location.href = 'profileUser.html';
+  });
   /* funcionalidad a los post del usuario*/
   var textArea = $('#inputPost');
   var boton = $('#post');
