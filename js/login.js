@@ -1,14 +1,5 @@
 $(document).ready(function() {
-  // variables
-  var config = {
-    apiKey: "AIzaSyDj-LvKeMqL7iTWWUo8ki7cLGupd7GjFmk",
-    authDomain: "sociallab-a8547.firebaseapp.com",
-    databaseURL: "https://sociallab-a8547.firebaseio.com",
-    projectId: "sociallab-a8547",
-    storageBucket: "sociallab-a8547.appspot.com",
-    messagingSenderId: "973475069338"
-  };
-  firebase.initializeApp(config);
+  
   
   var $email = $('#inputEmail');
   var $password = $('#inputPassword');
@@ -18,7 +9,7 @@ $(document).ready(function() {
 
   // asociando eventos a los inputs
   $email.on('input', function() {
-    console.log(event.target.value);
+    //console.log(event.target.value);
     console.log($(this).val());
     var PATERNEMAIL = /^[a-zA-Z0-9\._-]+@[a-zA-Z0-9-]{2,}[.][a-zA-Z]{2,3}$/;
     console.log(PATERNEMAIL.test($(this).val()));
@@ -43,7 +34,7 @@ $(document).ready(function() {
     if (verifyEmail === true && verifyPassword === true) {
       $('#btnSignIn').addClass('ensabled');
       $('#btnSignIn').removeClass('disabled');
-      //$('#btnSignIn').attr('href', 'profileUser.html');       
+      // $('#btnSignIn').attr('href', 'profileUser.html');       
     }
   }
 
@@ -51,7 +42,7 @@ $(document).ready(function() {
     $('#btnSignIn').addClass('disabled');       
   }
   // validación dentro del firebase
-  $('#btnSignIn').on('click', function(event){
+  $('#btnSignIn').on('click', function(event) {
     // que el usuario ingrese con un correo y contraseña 
     var emailLogin = $email.val();
     var passwordLogin = $password.val();
@@ -63,7 +54,7 @@ $(document).ready(function() {
       var errorMessage = error.message;
       // ...
     });
-    //observador
+    // observador
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
@@ -76,4 +67,37 @@ $(document).ready(function() {
       }
     });
   });
+
+// inicio sesión google 
+  var provider = new firebase.auth.GoogleAuthProvider();
+
+  $('#btnGoogle').click(function(){
+   firebase.auth().signInWithPopup(provider).then(function(result) {
+    var token = result.credential.accessToken;
+    var user = result.user;
+
+    console.log(result.user);
+
+      firebase.database().ref('user/' + user.uid).set({
+      name: user.displayName,
+      email: user.email,
+      uid: user.uid,
+      photoURL: user.photoURL
+    }).then(user => {
+        console.log('Registrado!')
+        $(location).attr('href','profileUser.html')
+      });
+    /*
+      console.log(result.user);
+      guardaDatos(result.user);
+      $('#usericon').append("<img src='"+result.user.photoURL +"' />");*/
+
+    }).catch(function(error) {
+    var errorCode = error.code;
+    var errorMessage = error.messaje;
+    var email = error.email;
+    var credential = error.credential;
+    });
+  });
+
 });

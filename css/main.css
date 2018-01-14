@@ -85,7 +85,7 @@ body {
 }
 
 .usericon {
-    background-image: url("../assets/images/iconUser.png");
+    /*background-image: url("../assets/images/iconUser.png");*/
     background-size: cover;
     width: 150px;
     height: 150px;

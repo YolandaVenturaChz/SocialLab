@@ -39,7 +39,7 @@
 							</a>
 						</span>
 					</div>
-					<a href="../index.html" class="btn btnStyle">Cerrar Sesión</a>
+					<a href="../index.html" class="btn btnStyle" id="closeSesion">Cerrar Sesión</a>
 				</form>
 			</div>
 		</nav>
@@ -49,9 +49,9 @@
 		<section class="row">
 			<div class="col-xs-12 col-md-12 userImagen">
 				<div class="userInfo">
-					<div class="usericon">
+					<div class="usericon" id="usericon">
 					</div>
-					<h4 id="name" class="username username-responsive">Sammy Cordova Coder</h4>
+					<h4 id="name" class="username username-responsive"></h4>
 					<h5 id="placeHome">
 						<i class="fa fa-bullseye" aria-hidden="true"></i>
 						Miraflores, Benavides</h5>
@@ -70,8 +70,8 @@
 			<div class="col-xs-12 col-md-4 aside" id="sectionInfo">
 				<hr>
 				<span class="description">Soy Sammy pero me pueden llamar Sam ! </span>
-				<h5 class="emailUser">
-					<i class="fa fa-envelope-o emailIcon" aria-hidden="true"></i> sammyCo@gmail.com</h5>
+				<h5 class="emailUser" >
+					<i class="fa fa-envelope-o emailIcon" aria-hidden="true"></i><span id="emailProfile"></span></h5>
 				<div class="langPrograming">
 					<h5>Especialización:</h5>
 					<img src="../assets/images/frontend.png" alt="front" class="logofront">
@@ -170,7 +170,9 @@
     <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase-database.js"></script>
 	<script src="../vendors/jQuery/jquery-3.2.1.min.js"></script>
 	<script src="../vendors/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/signup1.js"></script>
 	<script type="text/javascript" src="../js/profileUser.js"></script>
+	
 </body>
 
 </html>

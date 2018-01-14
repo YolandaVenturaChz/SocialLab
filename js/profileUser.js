@@ -1,18 +1,31 @@
-$('document').ready(function () {
-  var config = {
-    apiKey: "AIzaSyDj-LvKeMqL7iTWWUo8ki7cLGupd7GjFmk",
-    authDomain: "sociallab-a8547.firebaseapp.com",
-    databaseURL: "https://sociallab-a8547.firebaseio.com",
-    projectId: "sociallab-a8547",
-    storageBucket: "sociallab-a8547.appspot.com",
-    messagingSenderId: "973475069338"
-  };
-  firebase.initializeApp(config);
+$('document').ready(function() {
+  // database
+  var database = firebase.database();
+  var reference = database.ref('user');
+
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      var uid = user.uid;
+      reference.on('value', function(datos) {
+        users = datos.val();
+        var arrayUser = Object.values(users);
+        for (i = 0; i < arrayUser.length; i++) {
+          if (arrayUser[i].uid === uid) {
+            var id = arrayUser[i];
+            $('#name').text(id.name);
+            $('#emailProfile').text(id.email);
+            $('.description').text(id.description);
+          }
+        }
+      });
+    }
+  });
+
   /* ventaana profileUser */
-  $('#config').click(function () {
+  $('#config').click(function() {
     window.location.href = 'userConfig.html';
   });
-  $('#home').click(function () {
+  $('#home').click(function() {
     window.location.href = 'profileUser.html';
   });
   /* funcionalidad a los post del usuario*/
@@ -20,7 +33,7 @@ $('document').ready(function () {
   var boton = $('#post');
   boton.disabled = true;
   /* Al hacer clic agregar debajo */
-  boton.click(function () {
+  boton.click(function() {
     /* alert('me diste clic'); */
     var valueText = textArea.val();
     var newDiv = $('<div class="newDiv"></div>');
@@ -59,11 +72,13 @@ $('document').ready(function () {
     }
     return time;
   }
-  function closeSesion(){
+
+  $('#closeSesion').on('click', function() {
     firebase.auth().signOut().then(function() {
       console.log('Cerrando sesión...');
     }).catch(function(error) {
       console.log(error);
     });
-  }
+ });
+  
 });

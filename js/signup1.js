@@ -9,10 +9,14 @@ $(document).ready(function() {
     messagingSenderId: "973475069338"
   };
   firebase.initializeApp(config);
+  
+  var database = firebase.database();
+  var reference = database.ref('user');
 
   var email = $('#email');
   var password = $('#password');
   var name = $('#name');
+  var description = $('#description')
   var confirmP = $('#confirmPassword');
 
   // verificadores de variables
@@ -53,43 +57,41 @@ $(document).ready(function() {
   function desactBtn() {
     $('#btnRegister').addClass('disabled');
   }
-$('#btnRegister').on('click', function(){
-  var emailRegister = email.val();
-  var passwordRegister = password.val();
-  var nameRegister = name.val();
-  var confirmPRegister = confirmP.val();
-  // registro de usuario 
-  firebase.auth().createUserWithEmailAndPassword(emailRegister, passwordRegister).then(function() {
-    verifyUser(user);
-  }).catch(function(error) {
+  $('#btnRegister').on('click', function() {
+    var emailRegister = email.val();
+    var passwordRegister = password.val();
+    var nameRegister = name.val();
+    var confirmPRegister = confirmP.val();
+    var insertDescription = description.val();
+    // registro de usuario 
+    firebase.auth().createUserWithEmailAndPassword(emailRegister, passwordRegister).catch(function(error) {
     // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
+      var errorCode = error.code;
+      var errorMessage = error.message;
     // ...
     });
     firebase.auth().onAuthStateChanged(function(user) {
       if (user) {
         // User is signed in.
-        var displayName = user.displayName;
-        var email = user.email;
-        console.log('+++++')
-        var emailVerified = user.emailVerified;
-        var photoURL = user.photoURL;
-        var isAnonymous = user.isAnonymous;
-        var uid = user.uid;
-        var providerData = user.providerData;
+        firebase.database().ref('user/' + user.uid).set({
+          name: nameRegister,
+          email: user.email,
+          photoURL: user.photoURL,
+          uid: user.uid
+        }).then(user => {
+          console.log('registrado');
+        });
         // ...
-        console.log('Usuario registrado')
         $(location).attr('href', 'profileUser.html');
       } else {
         // User is signed out.
         // ...
+        console.log(error);
       }
     });
-    
   });
   // para verificar y enviar un mensaje al correo del usuario
-  function verifyUser(user){
+  /*function verifyUser(user){
     var user = firebase.auth().currentUser;
     user.sendEmailVerification().then(function() {
       // Email sent.
@@ -98,5 +100,5 @@ $('#btnRegister').on('click', function(){
       // An error happened.
       console.log(error);
     });
-  }
+  }*/
 });
