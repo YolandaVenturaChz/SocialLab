@@ -1,9 +1,18 @@
-$('document').ready(function() {  
+$('document').ready(function () {
+  var config = {
+    apiKey: "AIzaSyDj-LvKeMqL7iTWWUo8ki7cLGupd7GjFmk",
+    authDomain: "sociallab-a8547.firebaseapp.com",
+    databaseURL: "https://sociallab-a8547.firebaseio.com",
+    projectId: "sociallab-a8547",
+    storageBucket: "sociallab-a8547.appspot.com",
+    messagingSenderId: "973475069338"
+  };
+  firebase.initializeApp(config);
   /* ventaana profileUser */
-  $('#config').click(function() {
+  $('#config').click(function () {
     window.location.href = 'userConfig.html';
   });
-  $('#home').click(function() {
+  $('#home').click(function () {
     window.location.href = 'profileUser.html';
   });
   /* funcionalidad a los post del usuario*/
@@ -11,7 +20,7 @@ $('document').ready(function() {
   var boton = $('#post');
   boton.disabled = true;
   /* Al hacer clic agregar debajo */
-  boton.click(function() {
+  boton.click(function () {
     /* alert('me diste clic'); */
     var valueText = textArea.val();
     var newDiv = $('<div class="newDiv"></div>');
@@ -49,5 +58,12 @@ $('document').ready(function() {
       time = hour + ':' + min + ' AM';
     }
     return time;
+  }
+  function closeSesion(){
+    firebase.auth().signOut().then(function() {
+      console.log('Cerrando sesión...');
+    }).catch(function(error) {
+      console.log(error);
+    });
   }
 });
