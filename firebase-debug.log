@@ -29,3 +29,43 @@
 [debug] [2018-01-15T01:59:08.838Z] <<< HTTP RESPONSE 200
 [info] +  hosting: Local server: http://localhost:5000
 
+[debug] [2018-01-15T14:34:18.471Z] ----------------------------------------------------------------------
+[debug] [2018-01-15T14:34:18.487Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Satellite\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-15T14:34:18.487Z] CLI Version:   3.16.0
+[debug] [2018-01-15T14:34:18.487Z] Platform:      win32
+[debug] [2018-01-15T14:34:18.487Z] Node Version:  v8.6.0
+[debug] [2018-01-15T14:34:18.487Z] Time:          Mon Jan 15 2018 09:34:18 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:18.487Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-15T14:34:18.503Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-15T14:34:18.503Z] > authorizing via signed-in user
+[debug] [2018-01-15T14:34:18.503Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-01-15T14:34:18.503Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/3vQpnmcvdnmRymcFWm-XKgBbmsiWaWpTApc-3RGPSfY',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Mon Jan 15 2018 09:34:18 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:19.220Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T14:34:19.267Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/sociallab-a8547  
+  
+ Mon Jan 15 2018 09:34:19 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:21.186Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T14:34:21.186Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/sociallab-a8547/tokens  
+  
+ Mon Jan 15 2018 09:34:21 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:22.200Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Satellite\Desktop\SocialLab\SocialLab'...
+[info] 
+[debug] [2018-01-15T14:34:22.215Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sociallab-a8547  
+  
+ Mon Jan 15 2018 09:34:22 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:23.323Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T14:34:23.323Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/973475069338/clients/_:getWebAppConfig  
+  
+ Mon Jan 15 2018 09:34:23 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T14:34:24.321Z] <<< HTTP RESPONSE 200
+[info] +  hosting: Local server: http://localhost:5000
+

@@ -1,5 +1,4 @@
 $('document').ready(function() {
-<<<<<<< HEAD
   // database
   var database = firebase.database();
   var reference = database.ref('user');
@@ -67,7 +66,7 @@ $('document').ready(function() {
     var time;
     if (min < 10) {
       min = '0' + min;
-=======
+    }}
     /* ventaana profileUser */
     $('#demo').daterangepicker({
         "startDate": "11/01/2018",
@@ -96,7 +95,6 @@ $('document').ready(function() {
     /* funcion para limpiar el textArea */
     function clean() {
         textArea.val('');
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
     }
     /* evento para el autosize */
     textArea.keydown(function() {
@@ -124,9 +122,6 @@ $('document').ready(function() {
         }
         return time;
     }
-<<<<<<< HEAD
-    return time;
-  }
 
   $('#closeSesion').click(function() {
     firebase.auth().signOut().then(function() {
@@ -137,6 +132,4 @@ $('document').ready(function() {
     });
  });
   
-=======
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
 });

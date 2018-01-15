@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
     font-family: 'Lato', sans-serif;
 }
@@ -233,24 +233,13 @@ ul {
     color: white;
     width: 100%;
     height: 7vh;
-    padding: 10px;
+    padding: 12px;
 }
 
 .first-level {
-    height: 660px;
+    margin-top: 10px;
+    height: 7vh;
     border-radius: 12px;
-}
-
-.first-level li {
-    height: 34px;
-    font-size: 20px;
-    list-style: none;
-    padding: 2em;
-}
-
-.first-level li a {
-    color: black;
-    text-decoration: none;
 }
 
 
@@ -259,10 +248,8 @@ ul {
 @media (min-width: 1280px) {
     .containerUser {
         padding-left: 10vh;
-=======
     body {
         font-family: 'Lato', sans-serif;
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
     }
     /* #FFC107 #000000 #333333*/
     
@@ -270,7 +257,6 @@ ul {
         padding-left: 0;
         padding-right: 0;
     }
-<<<<<<< HEAD
     .usericon {
         padding: 3vh 5vh;
     }
@@ -281,7 +267,6 @@ ul {
 osease :v minimo mobile */
 
 @media only screen and (max-width:320px) {
-=======
     
     .logo {
         height: auto;
@@ -346,7 +331,6 @@ osease :v minimo mobile */
         filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff', GradientType=1);
     }
     
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
     .userInfo h4 {
         display: inline-block;
         margin-top: 30px;
@@ -372,7 +356,6 @@ osease :v minimo mobile */
         padding-bottom: 10px;
         border-right: 1px dotted gray;
     }
-<<<<<<< HEAD
     .friendsMentors {
         padding: 1px;
     }
@@ -393,8 +376,6 @@ osease :v minimo mobile */
 /* :v medio mobile */
 
 @media only screen and (max-width: 500px) {
-=======
-    
     .logofront {
         width: 50px;
         height: 50px;
@@ -412,7 +393,6 @@ osease :v minimo mobile */
         height: auto;
     }
     
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
     .containerUser {
         /*outline: 1px solid blue;*/
         height: 20vh;
@@ -455,7 +435,6 @@ osease :v minimo mobile */
     .spaceOne {
         margin-right: 5px;
     }
-<<<<<<< HEAD
     .emailUser {
         margin: 10px 10vh;
     }
@@ -463,8 +442,6 @@ osease :v minimo mobile */
 
 
 /* .col-md-6 .col-md-offset-3 */
-
-
 /* Prueba  en userconfig*/
 
 .file-input-wrapper {
@@ -514,10 +491,7 @@ osease :v minimo mobile */
     box-shadow: 2px 2px 2px gray;
 }
 
-
-/*-----------------fotter------------------------*/
-
-footer {
+footer { /* mobile */
     background-color: black;
     color: white;
     height: max-content;
@@ -537,9 +511,6 @@ footer {
     .vh45 {
         width: 100vh;
     }
-    /*-----------------footer----------*/
-=======
-    
     .btnFriends {
         margin-left: 30%;
         margin-bottom: 2vh;
@@ -601,20 +572,9 @@ footer {
     }
     
     .first-level {
-        height: 660px;
+        height: 10vh;
         border-radius: 12px;
-    }
-    
-    .first-level li {
-        height: 34px;
-        font-size: 20px;
-        list-style: none;
-        padding: 2em;
-    }
-    
-    .first-level li a {
-        color: black;
-        text-decoration: none;
+        padding: 0;
     }
     
     .show-calendar {
@@ -625,132 +585,6 @@ footer {
         background-image: url('../assets/images/backgroundOne.jpeg');
         background-size: cover;
     }
-    /* desktop */
-    
-    @media (min-width: 1280px) {
-        .containerUser {
-            padding-left: 10vh;
-        }
-        .btnFriends {
-            margin-left: 33%;
-        }
-    }
-    /* minimo min para evitar el movimiento del flujo de objetos
-osease :v minimo mobile */
-    
-    @media only screen and (max-width:320px) {
-        .userInfo h4 {
-            display: inline-block;
-            margin-top: 10px;
-        }
-        .userInfo>a {
-            margin-right: 10px;
-            color: white;
-        }
-        .userInfo .icon {
-            float: right;
-        }
-        #placeHome {
-            float: left;
-        }
-        .usericon {
-            width: 100px;
-            height: 100px;
-        }
-        .friendsMentors {
-            padding: 1px;
-        }
-    }
-    /* :v medio mobile */
-    
-    @media only screen and (max-width: 500px) {
-        .containerUser {
-            padding-right: 10vh;
-        }
-        .description {
-            margin-left: 1vh;
-        }
-        .emailUser {
-            margin: 10px 10vh;
-        }
-    }
-    
-    @media only screen and (min-width:750px) {
-        .description {
-            margin-left: 4vh;
-        }
-    }
-    /* .col-md-6 .col-md-offset-3 */
-    /* Prueba  en userconfig*/
-    
-    .file-input-wrapper {
-        width: 200px;
-        height: 40px;
-        overflow: hidden;
-        position: relative;
-    }
-    
-    .file-input-wrapper>input[type="file"] {
-        font-size: 200px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        opacity: 0;
-    }
-    
-    .file-input-wrapper>.btn-file-input {
-        display: inline-block;
-        width: 30px;
-        height: 30px;
-        background-color: #FFC107;
-        border: 0;
-        border-radius: 30px;
-        position: relative;
-        top: 1vh;
-        left: 12vh;
-    }
-    
-    .file-input-wrapper:hover>.btn-file-input {
-        background-color: #333333;
-        color: white;
-    }
-    /* post del User */
-    
-    .newDiv {
-        padding: 7px;
-        width: 60%;
-        margin: 3px;
-        margin-bottom: 10px;
-        height: auto;
-        clear: both;
-        border-radius: 20px;
-        background-color: rgba(26, 26, 26, 0.385);
-        box-shadow: 2px 2px 2px gray;
-    }
-    /*-----------------fotter------------------------*/
-    
->>>>>>> ec0a202d51c34111c641926d333afe139cf51214
-    footer {
-        background-color: black;
-        color: white;
-        height: max-content;
-        width: 100%;
-        height: auto;
-    }
-    
-    .moving {
-        margin-top: 5vh;
-    }
-    
-    .alt {
-        margin-top: 10px;
-    }
-    
-    @media (min-width: 1280px) {
-        .vh45 {
-            width: 100vh;
-        }
-        /*-----------------footer----------*/
         footer {
             width: 100%;
         }
@@ -761,7 +595,12 @@ osease :v minimo mobile */
             margin-bottom: 6%;
         }
         #demo {
-            margin-top: 2em;
-            margin-left: 32em;
+            margin-top: 3vh;
+        }
+        .containerUser {
+            padding-left: 10vh;
+        }
+        .btnFriends {
+            margin-left: 33%;
         }
     }
