@@ -82,7 +82,7 @@ $(document).ready(function() {
       name: user.displayName,
       email: user.email,
       uid: user.uid,
-      photoURL: user.photoURL
+      profilePhoto: user.photoURL
     }).then(user => {
         console.log('Registrado!')
         $(location).attr('href','profileUser.html')
