@@ -77,21 +77,6 @@ $('document').ready(function() {
     $('#config').click(function() {
         window.location.href = 'userConfig.html';
     });
-
-    /* funcionalidad a los post del usuario*/
-    var textArea = $('#inputPost');
-    var boton = $('#post');
-    boton.disabled = true;
-    /* Al hacer clic agregar debajo */
-    boton.click(function() {
-        /* alert('me diste clic'); */
-        var valueText = textArea.val();
-        var newDiv = $('<div class="newDiv"></div>');
-        newDiv.text(time() + ' ' + valueText);
-        var post = $('#insert-post');
-        post.append(newDiv);
-        clean();
-    });
     /* funcion para limpiar el textArea */
     function clean() {
         textArea.val('');
