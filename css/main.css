@@ -91,6 +91,10 @@ body {
     height: 150px;
     border-radius: 100px 100px;
     float: left;
+    padding: 3vh 5vh;
+}
+.styleImg {
+    border-radius: 50px;
 }
 
 
@@ -255,6 +259,9 @@ ul {
     }
     .btnFriends {
         margin-left: 33%;
+    }
+    .usericon {
+        padding: 3vh 5vh;
     }
 }
 

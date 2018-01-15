@@ -14,7 +14,9 @@ $('document').ready(function() {
             var id = arrayUser[i];
             $('#name').text(id.name);
             $('#emailProfile').text(id.email);
-            $('.description').text(id.description);
+            console.log(id.profilePhoto);
+            $('#usericon').attr('src',id.profilePhoto);
+            $('#description-js').text(id.description);
           }
         }
       });
@@ -73,9 +75,10 @@ $('document').ready(function() {
     return time;
   }
 
-  $('#closeSesion').on('click', function() {
+  $('#closeSesion').click(function() {
     firebase.auth().signOut().then(function() {
       console.log('Cerrando sesión...');
+      $(location).attr('href','login.html');
     }).catch(function(error) {
       console.log(error);
     });

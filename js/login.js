@@ -87,16 +87,36 @@ $(document).ready(function() {
         console.log('Registrado!')
         $(location).attr('href','profileUser.html')
       });
-    /*
-      console.log(result.user);
-      guardaDatos(result.user);
-      $('#usericon').append("<img src='"+result.user.photoURL +"' />");*/
 
     }).catch(function(error) {
     var errorCode = error.code;
     var errorMessage = error.messaje;
     var email = error.email;
     var credential = error.credential;
+    });
+  });
+  // funcion para registro e inicio de sesion con facebook 
+  var providerFacebook = new firebase.auth.FacebookAuthProvider();
+  $('#btnFb').click(function(){
+    firebase.auth().signInWithPopup(providerFacebook).then(function(result) {
+
+  var token = result.credential.accessToken;
+  var user = result.user;
+
+  firebase.database().ref('user/' + user.uid).set({
+      name: user.displayName,
+      email: user.email,
+      uid: user.uid,
+      profilePhoto: user.photoURL
+    }).then(user => {
+        console.log('Registrado!')
+        $(location).attr('href','profileUser.html')
+      });
+    }).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      var email = error.email;
+      var credential = error.credential;
     });
   });
 

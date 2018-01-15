@@ -77,7 +77,8 @@ $(document).ready(function() {
           name: nameRegister,
           email: user.email,
           photoURL: user.photoURL,
-          uid: user.uid
+          uid: user.uid,
+          decription: insertDescription
         }).then(user => {
           console.log('registrado');
         });

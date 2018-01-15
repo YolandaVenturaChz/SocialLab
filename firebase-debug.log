@@ -1,0 +1,31 @@
+[debug] [2018-01-15T01:59:05.177Z] ----------------------------------------------------------------------
+[debug] [2018-01-15T01:59:05.181Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Satellite\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2018-01-15T01:59:05.181Z] CLI Version:   3.16.0
+[debug] [2018-01-15T01:59:05.181Z] Platform:      win32
+[debug] [2018-01-15T01:59:05.182Z] Node Version:  v8.6.0
+[debug] [2018-01-15T01:59:05.182Z] Time:          Sun Jan 14 2018 20:59:05 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T01:59:05.182Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-01-15T01:59:05.199Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-01-15T01:59:05.200Z] > authorizing via signed-in user
+[debug] [2018-01-15T01:59:05.203Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/sociallab-a8547  
+  
+ Sun Jan 14 2018 20:59:05 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T01:59:06.490Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T01:59:06.493Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/sociallab-a8547/tokens  
+  
+ Sun Jan 14 2018 20:59:06 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T01:59:07.187Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'C:\Users\Satellite\Desktop\SocialLab\SocialLab'...
+[info] 
+[debug] [2018-01-15T01:59:07.193Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sociallab-a8547  
+  
+ Sun Jan 14 2018 20:59:07 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T01:59:07.954Z] <<< HTTP RESPONSE 200
+[debug] [2018-01-15T01:59:07.956Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/973475069338/clients/_:getWebAppConfig  
+  
+ Sun Jan 14 2018 20:59:07 GMT-0500 (Hora est. Pacífico, Sudamérica)
+[debug] [2018-01-15T01:59:08.838Z] <<< HTTP RESPONSE 200
+[info] +  hosting: Local server: http://localhost:5000
+
