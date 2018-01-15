@@ -305,8 +305,8 @@ osease :v minimo mobile */
         background-color: black;
         color: white;
     }
+
     /* first section */
-    
     .userImagen {
         background-image: url("../assets/images/backgroundcoder.jpg");
         background-size: cover;
